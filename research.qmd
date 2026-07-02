@@ -6,12 +6,26 @@ My research is centered on **explainable AI**, **mechanistic interpretability**,
 
 ## Research agenda
 
-I am interested in explanations as operational signals: not only as post-hoc descriptions for humans, but as measurable quantities that can improve AI systems. This includes:
+I am interested in explanations as operational signals: not only as post-hoc descriptions for humans, but as measurable quantities that can improve AI systems.
+
+Current directions:
 
 - detecting contextual hallucinations in retrieval-augmented generation,
 - using model-internal features for evaluation and reliability,
 - explanation-based covariate drift detection,
-- interpretable NLP systems for information extraction and document understanding.
+- interpretable NLP systems for information extraction and document understanding,
+- reliable AI workflows for science and industry.
+
+## Explainability as an engineering signal
+
+A recurring theme in my work is that explanations can be used to **improve** AI systems, not only to explain them after the fact. This includes model monitoring, drift detection, model evaluation, and mechanistic diagnostics.
+
+## Software Campus
+
+**Software Campus Fellow / Project Lead**  
+Industry partner: **Celonis**
+
+I am developing explainability-driven methods for evaluating and improving AI systems, with an emphasis on language-model reliability, grounding, and mechanistic diagnostics.
 
 ## Collaboration interests
 
@@ -22,10 +36,3 @@ I am especially interested in source-grounded AI-for-science settings where mode
 - engineering and technical documentation,
 - policy, legal, and financial reports,
 - enterprise process and operational documents.
-
-## Software Campus
-
-**Software Campus Fellow / Project Lead**  
-Industry partner: **Celonis**
-
-I am developing explainability-driven methods for evaluating and improving AI systems, with an emphasis on language-model reliability, grounding, and mechanistic diagnostics.

@@ -8,6 +8,10 @@ title: "CV"
 DFKI – German Research Center for Artificial Intelligence, Berlin  
 PhD supervised by Prof. Dr.-Ing. Sebastian Möller, TU Berlin / DFKI
 
+## Research interests
+
+Language modeling, interpretable AI, uncertainty quantification, information extraction, mechanistic interpretability, and reliable retrieval-augmented generation.
+
 ## Education
 
 **M.Sc. Cognitive Systems**  
@@ -21,12 +25,13 @@ University of Sheffield, UK
 
 ## Selected experience
 
-- DFKI — Researcher / PhD Student
-- SAP Machine Learning Research Group — Research Student
-- Hasso-Plattner-Institut — Student Research Assistant
-- MathWorks — Associate Software Developer
-- EveryKey — Lead Windows Developer
+- **DFKI** — Researcher / PhD Student
+- **DFKI** — Master Thesis Research Student
+- **SAP Machine Learning Research Group** — Research Student
+- **Hasso-Plattner-Institut** — Student Research Assistant
+- **MathWorks** — Associate Software Developer
+- **EveryKey** — Lead Windows Developer
 
 ## Skills
 
-Python, PyTorch, Hugging Face Transformers, scikit-learn, FastAPI, Docker, Git, Linux, NLP, data processing, research writing, mentoring.
+Python, PyTorch, Hugging Face Transformers, scikit-learn, FastAPI, Docker, Git, Linux, NLP, data processing, research writing, public speaking, and mentoring.

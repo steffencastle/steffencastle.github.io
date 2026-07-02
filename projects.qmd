@@ -21,3 +21,11 @@ For scientific and high-stakes RAG systems, the practical question is often not 
 ### Poster
 
 This project was adapted into a collaboration-oriented poster for the AI Grid Summer School “AI for Science”, Paris 2026.
+
+## Explanation-based drift detection
+
+This work studies how explanation signals can be used to identify covariate drift. The motivation is to use interpretability methods as practical model-monitoring tools rather than only as human-facing explanations.
+
+## Entity linking for product carbon footprint estimation
+
+This project applies language models and entity linking to map manufactured components to environmental impact databases, supporting automated product carbon footprint estimation.

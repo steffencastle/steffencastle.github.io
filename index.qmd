@@ -1,37 +1,108 @@
 ---
 title: "Steffen Castle"
-subtitle: "Explainable AI · Mechanistic Interpretability · Reliable Language Models"
+subtitle: "Researcher in Explainable AI, Mechanistic Interpretability, and Reliable Language Models"
 ---
 
-:::: {.hero}
-I am a researcher and PhD student at **DFKI** working on explainable and mechanistic methods for making language models more reliable. My current research studies how models use — or fail to use — provided source documents, with a focus on detecting contextual hallucinations in retrieval-augmented generation.
+::: {.hero}
+::: {.hero-text}
+# Steffen Castle
 
-I am also a **Software Campus fellow** with industry partner **Celonis**.
-::::
+## Researcher, DFKI Berlin · PhD Student, TU Berlin
 
-## Current focus
+**Explainable AI · Mechanistic Interpretability · Reliable Language Models**
 
-:::: {.cards}
+I study how language models use information internally, and how those internal signals can be used to detect failures such as contextual hallucinations in retrieval-augmented generation.
+
+::: {.hero-buttons}
+[Research](research.qmd){.btn .btn-primary}
+[Projects](projects.qmd){.btn .btn-secondary}
+[Contact](contact.qmd){.btn .btn-secondary}
+:::
+:::
+
+::: {.hero-photo}
+![](assets/profile.jpg){fig-alt="Portrait of Steffen Castle"}
+:::
+:::
+
+::: {.affiliations}
+::: {.affiliation}
+**DFKI Berlin**  
+German Research Center for Artificial Intelligence
+:::
+
+::: {.affiliation}
+**TU Berlin**  
+PhD student
+:::
+
+::: {.affiliation}
+**Software Campus Fellow**  
+Industry partner: **Celonis**
+:::
+
+::: {.affiliation}
+**AI Grid Germany**  
+German delegation, AI for Science Summer School Paris 2026
+:::
+:::
+
+## Research story
+
+::: {.timeline}
+::: {.timeline-item}
+**2019–2020**  
+**Improving neural network explanations**  
+Master's research on Pattern-Guided Attribution and Pattern-Guided Integrated Gradients.
+:::
+
+::: {.timeline-item}
+**2021**  
+**Using explanations for drift detection**  
+Explanation signals as operational tools for detecting covariate shift.
+:::
+
+::: {.timeline-item}
+**2024–present**  
+**PhD: explanations as signals to improve AI systems**  
+Using model explanations for evaluation, monitoring, and reliability.
+:::
+
+::: {.timeline-item}
+**Current**  
+**Mechanistic grounding and hallucination detection**  
+Detecting unsupported RAG answers from source-specific residual-stream writes.
+:::
+:::
+
+## Highlights
+
+::: {.cards}
 ::: {.card}
-### Grounded language models
-Detecting when RAG systems produce fluent answers that are not supported by the retrieved source.
+### GroundHOG
+Detecting contextual hallucinations in RAG from source-specific residual writes.
+
+[Project page →](projects.qmd#groundhog)
 :::
 
 ::: {.card}
-### Mechanistic signals
-Using residual-stream writes, attention-head contributions, and source interactions as model-internal evidence.
+### Software Campus
+Explainability-driven AI reliability with industry partner **Celonis**.
+
+[Research agenda →](research.qmd#software-campus)
 :::
 
 ::: {.card}
-### Explainability for AI systems
-Using explanations not only for human interpretation, but also for drift detection, evaluation, and system monitoring.
+### Publications
+Work on explainability, drift detection, biomedical NLP, and LLM-based entity linking.
+
+[Publications →](publications.qmd)
 :::
-::::
 
-## Featured project
+::: {.card}
+### Collaboration
+Open to collaborations on grounded language models, AI-for-science workflows, and mechanistic interpretability.
 
-### GroundHOG: detecting contextual hallucination from source-specific residual writes
-
-GroundHOG compares how transformer blocks write information from retrieved context, response history, and feed-forward computation into the residual stream. The goal is to detect unsupported generation in document-grounded QA and related scientific workflows.
-
-[Read more →](projects.qmd)
+[Get in touch →](contact.qmd)
+:::
+:::

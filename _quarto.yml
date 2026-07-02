@@ -4,8 +4,10 @@ project:
 
 website:
   title: "Steffen Castle"
-  site-url: "https://steffen-castle.github.io"
+  site-url: "https://steffencastle.github.io"
+  description: "Steffen Castle — researcher in explainable AI, mechanistic interpretability, and reliable language models."
   navbar:
+    pinned: true
     left:
       - href: index.qmd
         text: Home
@@ -21,7 +23,7 @@ website:
         text: Contact
     right:
       - icon: github
-        href: https://github.com/steffen-castle
+        href: https://github.com/steffencastle
       - icon: linkedin
         href: https://www.linkedin.com/in/steffen-castle-430ba558/
       - icon: google
@@ -34,3 +36,5 @@ format:
       - styles.scss
     toc: false
     page-layout: full
+    smooth-scroll: true
+    link-external-newwindow: true
