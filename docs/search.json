@@ -11,14 +11,14 @@
     "href": "research.html#research-agenda",
     "title": "Research",
     "section": "Research agenda",
-    "text": "Research agenda\nI am interested in explanations as operational signals: not only as post-hoc descriptions for humans, but as measurable quantities that can improve AI systems. This includes:\n\ndetecting contextual hallucinations in retrieval-augmented generation,\nusing model-internal features for evaluation and reliability,\nexplanation-based covariate drift detection,\ninterpretable NLP systems for information extraction and document understanding."
+    "text": "Research agenda\nI am interested in explanations as operational signals: not only as post-hoc descriptions for humans, but as measurable quantities that can improve AI systems.\nCurrent directions:\n\ndetecting contextual hallucinations in retrieval-augmented generation,\nusing model-internal features for evaluation and reliability,\nexplanation-based covariate drift detection,\ninterpretable NLP systems for information extraction and document understanding,\nreliable AI workflows for science and industry."
   },
   {
-    "objectID": "research.html#collaboration-interests",
-    "href": "research.html#collaboration-interests",
+    "objectID": "research.html#explainability-as-an-engineering-signal",
+    "href": "research.html#explainability-as-an-engineering-signal",
     "title": "Research",
-    "section": "Collaboration interests",
-    "text": "Collaboration interests\nI am especially interested in source-grounded AI-for-science settings where model outputs should be constrained by provided evidence:\n\nbiomedical and clinical QA,\nmathematical or scientific reasoning,\nengineering and technical documentation,\npolicy, legal, and financial reports,\nenterprise process and operational documents."
+    "section": "Explainability as an engineering signal",
+    "text": "Explainability as an engineering signal\nA recurring theme in my work is that explanations can be used to improve AI systems, not only to explain them after the fact. This includes model monitoring, drift detection, model evaluation, and mechanistic diagnostics."
   },
   {
     "objectID": "research.html#software-campus",
@@ -26,6 +26,13 @@
     "title": "Research",
     "section": "Software Campus",
     "text": "Software Campus\nSoftware Campus Fellow / Project Lead\nIndustry partner: Celonis\nI am developing explainability-driven methods for evaluating and improving AI systems, with an emphasis on language-model reliability, grounding, and mechanistic diagnostics."
+  },
+  {
+    "objectID": "research.html#collaboration-interests",
+    "href": "research.html#collaboration-interests",
+    "title": "Research",
+    "section": "Collaboration interests",
+    "text": "Collaboration interests\nI am especially interested in source-grounded AI-for-science settings where model outputs should be constrained by provided evidence:\n\nbiomedical and clinical QA,\nmathematical or scientific reasoning,\nengineering and technical documentation,\npolicy, legal, and financial reports,\nenterprise process and operational documents."
   },
   {
     "objectID": "projects.html",
@@ -42,6 +49,20 @@
     "text": "Grounding via Head-wise Output Gram Features\nGroundHOG is a method for detecting contextual hallucination in retrieval-augmented question answering. It decomposes model-internal writes into three sources:\n\nretrieved context,\nresponse history,\nfeed-forward / parametric computation.\n\nThe method compares the magnitudes and interactions of these writes using per-head Gram features, then uses sparse classifiers or training-free readouts to detect when a generated answer is unsupported by the source.\n\n\nFor scientific and high-stakes RAG systems, the practical question is often not only whether an answer sounds true, but whether each claim is grounded in the documents provided to the model.\n\n\n\nThis project was adapted into a collaboration-oriented poster for the AI Grid Summer School “AI for Science”, Paris 2026."
   },
   {
+    "objectID": "projects.html#explanation-based-drift-detection",
+    "href": "projects.html#explanation-based-drift-detection",
+    "title": "Projects",
+    "section": "Explanation-based drift detection",
+    "text": "Explanation-based drift detection\nThis work studies how explanation signals can be used to identify covariate drift. The motivation is to use interpretability methods as practical model-monitoring tools rather than only as human-facing explanations."
+  },
+  {
+    "objectID": "projects.html#entity-linking-for-product-carbon-footprint-estimation",
+    "href": "projects.html#entity-linking-for-product-carbon-footprint-estimation",
+    "title": "Projects",
+    "section": "Entity linking for product carbon footprint estimation",
+    "text": "Entity linking for product carbon footprint estimation\nThis project applies language models and entity linking to map manufactured components to environmental impact databases, supporting automated product carbon footprint estimation."
+  },
+  {
     "objectID": "cv.html",
     "href": "cv.html",
     "title": "CV",
@@ -56,6 +77,13 @@
     "text": "Researcher and PhD Student\nDFKI – German Research Center for Artificial Intelligence, Berlin\nPhD supervised by Prof. Dr.-Ing. Sebastian Möller, TU Berlin / DFKI"
   },
   {
+    "objectID": "cv.html#research-interests",
+    "href": "cv.html#research-interests",
+    "title": "CV",
+    "section": "Research interests",
+    "text": "Research interests\nLanguage modeling, interpretable AI, uncertainty quantification, information extraction, mechanistic interpretability, and reliable retrieval-augmented generation."
+  },
+  {
     "objectID": "cv.html#education",
     "href": "cv.html#education",
     "title": "CV",
@@ -67,42 +95,49 @@
     "href": "cv.html#selected-experience",
     "title": "CV",
     "section": "Selected experience",
-    "text": "Selected experience\n\nDFKI — Researcher / PhD Student\nSAP Machine Learning Research Group — Research Student\nHasso-Plattner-Institut — Student Research Assistant\nMathWorks — Associate Software Developer\nEveryKey — Lead Windows Developer"
+    "text": "Selected experience\n\nDFKI — Researcher / PhD Student\nDFKI — Master Thesis Research Student\nSAP Machine Learning Research Group — Research Student\nHasso-Plattner-Institut — Student Research Assistant\nMathWorks — Associate Software Developer\nEveryKey — Lead Windows Developer"
   },
   {
     "objectID": "cv.html#skills",
     "href": "cv.html#skills",
     "title": "CV",
     "section": "Skills",
-    "text": "Skills\nPython, PyTorch, Hugging Face Transformers, scikit-learn, FastAPI, Docker, Git, Linux, NLP, data processing, research writing, mentoring."
+    "text": "Skills\nPython, PyTorch, Hugging Face Transformers, scikit-learn, FastAPI, Docker, Git, Linux, NLP, data processing, research writing, public speaking, and mentoring."
   },
   {
     "objectID": "contact.html",
     "href": "contact.html",
     "title": "Contact",
     "section": "",
-    "text": "Email: steffen.castle@dfki.de\nLinkedIn: Steffen Castle\nGoogle Scholar: Profile\nI am open to collaborations on grounded language models, mechanistic interpretability, explainability, and AI-for-science workflows."
+    "text": "Email: steffen.castle@dfki.de\nGitHub: github.com/steffencastle\nLinkedIn: Steffen Castle\nGoogle Scholar: Profile\nI am open to collaborations on grounded language models, mechanistic interpretability, explainability, and AI-for-science workflows."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Steffen Castle",
     "section": "",
-    "text": "I am a researcher and PhD student at DFKI working on explainable and mechanistic methods for making language models more reliable. My current research studies how models use — or fail to use — provided source documents, with a focus on detecting contextual hallucinations in retrieval-augmented generation.\nI am also a Software Campus fellow with industry partner Celonis."
+    "text": "Explainable AI · Mechanistic Interpretability · Reliable Language Models\nI study how language models use information internally, and how those internal signals can be used to detect failures such as contextual hallucinations in retrieval-augmented generation.\n\nResearch Projects Contact"
   },
   {
-    "objectID": "index.html#current-focus",
-    "href": "index.html#current-focus",
+    "objectID": "index.html#researcher-dfki-berlin-phd-student-tu-berlin",
+    "href": "index.html#researcher-dfki-berlin-phd-student-tu-berlin",
     "title": "Steffen Castle",
-    "section": "Current focus",
-    "text": "Current focus\n\n\nGrounded language models\nDetecting when RAG systems produce fluent answers that are not supported by the retrieved source.\n\n\nMechanistic signals\nUsing residual-stream writes, attention-head contributions, and source interactions as model-internal evidence.\n\n\nExplainability for AI systems\nUsing explanations not only for human interpretation, but also for drift detection, evaluation, and system monitoring."
+    "section": "",
+    "text": "Explainable AI · Mechanistic Interpretability · Reliable Language Models\nI study how language models use information internally, and how those internal signals can be used to detect failures such as contextual hallucinations in retrieval-augmented generation.\n\nResearch Projects Contact"
   },
   {
-    "objectID": "index.html#featured-project",
-    "href": "index.html#featured-project",
+    "objectID": "index.html#research-story",
+    "href": "index.html#research-story",
     "title": "Steffen Castle",
-    "section": "Featured project",
-    "text": "Featured project\n\nGroundHOG: detecting contextual hallucination from source-specific residual writes\nGroundHOG compares how transformer blocks write information from retrieved context, response history, and feed-forward computation into the residual stream. The goal is to detect unsupported generation in document-grounded QA and related scientific workflows.\nRead more →"
+    "section": "Research story",
+    "text": "Research story\n\n\n2019–2020\nImproving neural network explanations\nMaster’s research on Pattern-Guided Attribution and Pattern-Guided Integrated Gradients.\n\n\n2021\nUsing explanations for drift detection\nExplanation signals as operational tools for detecting covariate shift.\n\n\n2024–present\nPhD: explanations as signals to improve AI systems\nUsing model explanations for evaluation, monitoring, and reliability.\n\n\nCurrent\nMechanistic grounding and hallucination detection\nDetecting unsupported RAG answers from source-specific residual-stream writes."
+  },
+  {
+    "objectID": "index.html#highlights",
+    "href": "index.html#highlights",
+    "title": "Steffen Castle",
+    "section": "Highlights",
+    "text": "Highlights\n\n\nGroundHOG\nDetecting contextual hallucinations in RAG from source-specific residual writes.\nProject page →\n\n\nSoftware Campus\nExplainability-driven AI reliability with industry partner Celonis.\nResearch agenda →\n\n\nPublications\nWork on explainability, drift detection, biomedical NLP, and LLM-based entity linking.\nPublications →\n\n\nCollaboration\nOpen to collaborations on grounded language models, AI-for-science workflows, and mechanistic interpretability.\nGet in touch →"
   },
   {
     "objectID": "publications.html",

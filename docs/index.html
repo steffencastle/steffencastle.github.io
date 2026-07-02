@@ -27,7 +27,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -42,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-88ba928a5ad6106ed00abc0823714170.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d425ec33809d3b3728ed5fa4159699e2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,6 +69,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 </head>
@@ -118,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/steffen-castle"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/steffencastle"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -150,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Steffen Castle</h1>
-<p class="subtitle lead">Explainable AI · Mechanistic Interpretability · Reliable Language Models</p>
+<p class="subtitle lead">Researcher in Explainable AI, Mechanistic Interpretability, and Reliable Language Models</p>
 </div>
 
 
@@ -168,35 +168,90 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="hero">
-<p>I am a researcher and PhD student at <strong>DFKI</strong> working on explainable and mechanistic methods for making language models more reliable. My current research studies how models use — or fail to use — provided source documents, with a focus on detecting contextual hallucinations in retrieval-augmented generation.</p>
-<p>I am also a <strong>Software Campus fellow</strong> with industry partner <strong>Celonis</strong>.</p>
+<section id="steffen-castle" class="level1 hero-text">
+<h1>Steffen Castle</h1>
+<section id="researcher-dfki-berlin-phd-student-tu-berlin" class="level2">
+<h2 class="anchored" data-anchor-id="researcher-dfki-berlin-phd-student-tu-berlin">Researcher, DFKI Berlin · PhD Student, TU Berlin</h2>
+<p><strong>Explainable AI · Mechanistic Interpretability · Reliable Language Models</strong></p>
+<p>I study how language models use information internally, and how those internal signals can be used to detect failures such as contextual hallucinations in retrieval-augmented generation.</p>
+<div class="hero-buttons">
+<p><a href="./research.html" class="btn btn-primary">Research</a> <a href="./projects.html" class="btn btn-secondary">Projects</a> <a href="./contact.html" class="btn btn-secondary">Contact</a></p>
 </div>
-<section id="current-focus" class="level2">
-<h2 class="anchored" data-anchor-id="current-focus">Current focus</h2>
+</section>
+</section>
+<div class="hero-photo">
+<p><img src="assets/profile.jpg" class="img-fluid" alt="Portrait of Steffen Castle"></p>
+</div>
+</div>
+<div class="affiliations">
+<div class="affiliation">
+<p><strong>DFKI Berlin</strong><br>
+German Research Center for Artificial Intelligence</p>
+</div>
+<div class="affiliation">
+<p><strong>TU Berlin</strong><br>
+PhD student</p>
+</div>
+<div class="affiliation">
+<p><strong>Software Campus Fellow</strong><br>
+Industry partner: <strong>Celonis</strong></p>
+</div>
+<div class="affiliation">
+<p><strong>AI Grid Germany</strong><br>
+German delegation, AI for Science Summer School Paris 2026</p>
+</div>
+</div>
+<section id="research-story" class="level2">
+<h2 class="anchored" data-anchor-id="research-story">Research story</h2>
+<div class="timeline">
+<div class="timeline-item">
+<p><strong>2019–2020</strong><br>
+<strong>Improving neural network explanations</strong><br>
+Master’s research on Pattern-Guided Attribution and Pattern-Guided Integrated Gradients.</p>
+</div>
+<div class="timeline-item">
+<p><strong>2021</strong><br>
+<strong>Using explanations for drift detection</strong><br>
+Explanation signals as operational tools for detecting covariate shift.</p>
+</div>
+<div class="timeline-item">
+<p><strong>2024–present</strong><br>
+<strong>PhD: explanations as signals to improve AI systems</strong><br>
+Using model explanations for evaluation, monitoring, and reliability.</p>
+</div>
+<div class="timeline-item">
+<p><strong>Current</strong><br>
+<strong>Mechanistic grounding and hallucination detection</strong><br>
+Detecting unsupported RAG answers from source-specific residual-stream writes.</p>
+</div>
+</div>
+</section>
+<section id="highlights" class="level2">
+<h2 class="anchored" data-anchor-id="highlights">Highlights</h2>
 <div class="cards">
-<section id="grounded-language-models" class="level3 card">
-<h3 class="anchored" data-anchor-id="grounded-language-models">Grounded language models</h3>
-<p>Detecting when RAG systems produce fluent answers that are not supported by the retrieved source.</p>
+<section id="groundhog" class="level3 card">
+<h3 class="anchored" data-anchor-id="groundhog">GroundHOG</h3>
+<p>Detecting contextual hallucinations in RAG from source-specific residual writes.</p>
+<p><a href="./projects.html#groundhog">Project page →</a></p>
 </section>
-<section id="mechanistic-signals" class="level3 card">
-<h3 class="anchored" data-anchor-id="mechanistic-signals">Mechanistic signals</h3>
-<p>Using residual-stream writes, attention-head contributions, and source interactions as model-internal evidence.</p>
+<section id="software-campus" class="level3 card">
+<h3 class="anchored" data-anchor-id="software-campus">Software Campus</h3>
+<p>Explainability-driven AI reliability with industry partner <strong>Celonis</strong>.</p>
+<p><a href="./research.html#software-campus">Research agenda →</a></p>
 </section>
-<section id="explainability-for-ai-systems" class="level3 card">
-<h3 class="anchored" data-anchor-id="explainability-for-ai-systems">Explainability for AI systems</h3>
-<p>Using explanations not only for human interpretation, but also for drift detection, evaluation, and system monitoring.</p>
+<section id="publications" class="level3 card">
+<h3 class="anchored" data-anchor-id="publications">Publications</h3>
+<p>Work on explainability, drift detection, biomedical NLP, and LLM-based entity linking.</p>
+<p><a href="./publications.html">Publications →</a></p>
+</section>
+<section id="collaboration" class="level3 card">
+<h3 class="anchored" data-anchor-id="collaboration">Collaboration</h3>
+<p>Open to collaborations on grounded language models, AI-for-science workflows, and mechanistic interpretability.</p>
+<p><a href="./contact.html">Get in touch →</a></p>
 </section>
 </div>
-</section>
-<section id="featured-project" class="level2">
-<h2 class="anchored" data-anchor-id="featured-project">Featured project</h2>
-<section id="groundhog-detecting-contextual-hallucination-from-source-specific-residual-writes" class="level3">
-<h3 class="anchored" data-anchor-id="groundhog-detecting-contextual-hallucination-from-source-specific-residual-writes">GroundHOG: detecting contextual hallucination from source-specific residual writes</h3>
-<p>GroundHOG compares how transformer blocks write information from retrieved context, response history, and feed-forward computation into the residual stream. The goal is to detect unsupported generation in document-grounded QA and related scientific workflows.</p>
-<p><a href="./projects.html">Read more →</a></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -273,7 +328,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/steffen-castle\.github\.io");
+        var filterRegex = new RegExp("https:\/\/steffencastle\.github\.io");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -287,6 +342,11 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -605,4 +665,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
