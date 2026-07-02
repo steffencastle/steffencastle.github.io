@@ -1,0 +1,32 @@
+---
+title: "CV"
+---
+
+## Current position
+
+**Researcher and PhD Student**  
+DFKI – German Research Center for Artificial Intelligence, Berlin  
+PhD supervised by Prof. Dr.-Ing. Sebastian Möller, TU Berlin / DFKI
+
+## Education
+
+**M.Sc. Cognitive Systems**  
+University of Potsdam, Germany
+
+**B.Sc. Computer Science**  
+Case Western Reserve University, USA
+
+**Exchange year**  
+University of Sheffield, UK
+
+## Selected experience
+
+- DFKI — Researcher / PhD Student
+- SAP Machine Learning Research Group — Research Student
+- Hasso-Plattner-Institut — Student Research Assistant
+- MathWorks — Associate Software Developer
+- EveryKey — Lead Windows Developer
+
+## Skills
+
+Python, PyTorch, Hugging Face Transformers, scikit-learn, FastAPI, Docker, Git, Linux, NLP, data processing, research writing, mentoring.

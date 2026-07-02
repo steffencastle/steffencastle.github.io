@@ -1,0 +1,10 @@
+---
+title: "Contact"
+---
+
+**Email:** [steffen.castle@dfki.de](mailto:steffen.castle@dfki.de)
+
+**LinkedIn:** [Steffen Castle](https://www.linkedin.com/in/steffen-castle-430ba558/)  
+**Google Scholar:** [Profile](https://scholar.google.com/citations?user=mQThBMEAAAAJ&hl=en)
+
+I am open to collaborations on grounded language models, mechanistic interpretability, explainability, and AI-for-science workflows.

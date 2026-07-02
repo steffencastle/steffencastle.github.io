@@ -1,0 +1,37 @@
+---
+title: "Steffen Castle"
+subtitle: "Explainable AI · Mechanistic Interpretability · Reliable Language Models"
+---
+
+:::: {.hero}
+I am a researcher and PhD student at **DFKI** working on explainable and mechanistic methods for making language models more reliable. My current research studies how models use — or fail to use — provided source documents, with a focus on detecting contextual hallucinations in retrieval-augmented generation.
+
+I am also a **Software Campus fellow** with industry partner **Celonis**.
+::::
+
+## Current focus
+
+:::: {.cards}
+::: {.card}
+### Grounded language models
+Detecting when RAG systems produce fluent answers that are not supported by the retrieved source.
+:::
+
+::: {.card}
+### Mechanistic signals
+Using residual-stream writes, attention-head contributions, and source interactions as model-internal evidence.
+:::
+
+::: {.card}
+### Explainability for AI systems
+Using explanations not only for human interpretation, but also for drift detection, evaluation, and system monitoring.
+:::
+::::
+
+## Featured project
+
+### GroundHOG: detecting contextual hallucination from source-specific residual writes
+
+GroundHOG compares how transformer blocks write information from retrieved context, response history, and feed-forward computation into the residual stream. The goal is to detect unsupported generation in document-grounded QA and related scientific workflows.
+
+[Read more →](projects.qmd)

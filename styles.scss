@@ -1,0 +1,39 @@
+/*-- scss:defaults --*/
+$primary: #08213f;
+$secondary: #0b6fae;
+$link-color: #0b6fae;
+
+/*-- scss:rules --*/
+.navbar { background-color: #08213f; }
+
+body { font-size: 1.05rem; }
+
+.hero {
+  background: linear-gradient(135deg, #08213f, #0b6fae);
+  color: white;
+  padding: 2.5rem;
+  border-radius: 18px;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #d9e2ec;
+  border-radius: 14px;
+  padding: 1.25rem;
+  background: #ffffff;
+  box-shadow: 0 4px 14px rgba(8, 33, 63, 0.08);
+}
+
+.card h3 { margin-top: 0; color: #08213f; }
+h1, h2, h3 { color: #08213f; }
+
+@media (max-width: 900px) {
+  .cards { grid-template-columns: 1fr; }
+}

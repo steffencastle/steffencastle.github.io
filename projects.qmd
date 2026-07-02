@@ -1,0 +1,23 @@
+---
+title: "Projects"
+---
+
+## GroundHOG
+
+**Grounding via Head-wise Output Gram Features**
+
+GroundHOG is a method for detecting contextual hallucination in retrieval-augmented question answering. It decomposes model-internal writes into three sources:
+
+1. retrieved context,
+2. response history,
+3. feed-forward / parametric computation.
+
+The method compares the magnitudes and interactions of these writes using per-head Gram features, then uses sparse classifiers or training-free readouts to detect when a generated answer is unsupported by the source.
+
+### Why it matters
+
+For scientific and high-stakes RAG systems, the practical question is often not only whether an answer sounds true, but whether each claim is grounded in the documents provided to the model.
+
+### Poster
+
+This project was adapted into a collaboration-oriented poster for the AI Grid Summer School “AI for Science”, Paris 2026.

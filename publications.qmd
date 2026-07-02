@@ -1,0 +1,13 @@
+---
+title: "Publications"
+---
+
+- **Steffen Castle**, Julian Moreno Schneider, Leonhard Hennig, Georg Rehm. *Entity Linking using LLMs for Automated Product Carbon Footprint Estimation*. Proceedings of the 1st Workshop on Ecology, Environment, and Natural Language Processing. Tallinn, Estonia, 2025.
+
+- Bernhard G. Humm et al. incl. **Steffen Castle**. *Innovations and Emerging Trends in Applied Machine Intelligence: Selected Results of the Dagstuhl Workshop AMI'2025*. Forthcoming, 2026.
+
+- **Steffen Castle**, Robert Schwarzenberg, Mohsen Pourvali. *Detecting Covariate Drift with Explanations*. NLPCC Workshop on Explainable Artificial Intelligence, 2021.
+
+- Robert Schwarzenberg and **Steffen Castle**. *Pattern-Guided Integrated Gradients*. ICML Workshop on Human Interpretability in Machine Learning, 2020.
+
+- Mariana Neves et al. incl. **Steffen Castle**. *Findings of the WMT 2024 Biomedical Translation Shared Task: Test Sets on Abstract Level*. WMT 2024.

@@ -1,0 +1,31 @@
+---
+title: "Research"
+---
+
+My research is centered on **explainable AI**, **mechanistic interpretability**, **uncertainty quantification**, and **language-model reliability**.
+
+## Research agenda
+
+I am interested in explanations as operational signals: not only as post-hoc descriptions for humans, but as measurable quantities that can improve AI systems. This includes:
+
+- detecting contextual hallucinations in retrieval-augmented generation,
+- using model-internal features for evaluation and reliability,
+- explanation-based covariate drift detection,
+- interpretable NLP systems for information extraction and document understanding.
+
+## Collaboration interests
+
+I am especially interested in source-grounded AI-for-science settings where model outputs should be constrained by provided evidence:
+
+- biomedical and clinical QA,
+- mathematical or scientific reasoning,
+- engineering and technical documentation,
+- policy, legal, and financial reports,
+- enterprise process and operational documents.
+
+## Software Campus
+
+**Software Campus Fellow / Project Lead**  
+Industry partner: **Celonis**
+
+I am developing explainability-driven methods for evaluating and improving AI systems, with an emphasis on language-model reliability, grounding, and mechanistic diagnostics.

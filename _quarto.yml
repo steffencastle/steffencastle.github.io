@@ -1,0 +1,35 @@
+project:
+  type: website
+
+website:
+  title: "Steffen Castle"
+  site-url: "https://steffen-castle.github.io"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: projects.qmd
+        text: Projects
+      - href: publications.qmd
+        text: Publications
+      - href: cv.qmd
+        text: CV
+      - href: contact.qmd
+        text: Contact
+    right:
+      - icon: github
+        href: https://github.com/steffen-castle
+      - icon: linkedin
+        href: https://www.linkedin.com/in/steffen-castle-430ba558/
+      - icon: google
+        href: https://scholar.google.com/citations?user=mQThBMEAAAAJ&hl=en
+
+format:
+  html:
+    theme:
+      - cosmo
+      - styles.scss
+    toc: false
+    page-layout: full
