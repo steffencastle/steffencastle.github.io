@@ -174,15 +174,9 @@ ul.task-list li input[type="checkbox"] {
 <p>Across three summarization benchmarks, DELTA reduces character-length errors by an order of magnitude compared to baselines while maintaining competitive summary quality in both automatic and human evaluation.</p>
 <p><a href="assets/papers/castle2026delta.pdf">PDF</a></p>
 </section>
-<section id="source-writes" class="level2">
-<h2 class="anchored" data-anchor-id="source-writes">Source-specific attention writes for hallucination detection</h2>
-<p><strong>The Sum Is Less Than Its Parts: Decomposing the Attention Write by Source Detects Contextual Hallucinations</strong> — BlackboxNLP 2026 (extended abstract)</p>
-<p>When a language model answers from a retrieved document, its attention heads mix evidence from the context with evidence from the model’s own self-generated tokens and write the <em>sum</em> into the residual stream. This work splits each head’s write into these two source-specific contributions before they are summed, and finds that the two sides do complementary jobs:</p>
-<ol type="1">
-<li>the <strong>context</strong> write, read out along the model’s unembedding, gives a training-free groundedness score;</li>
-<li>the <strong>response</strong> write (its magnitude and its directional agreement with the other residual writes) gives a supervised contextual-hallucination detector.</li>
-</ol>
-<p>Across grounded-generation benchmarks and model families, the supervised detector beats prior internal-state detectors, and the training-free readout is the strongest label-free groundedness signal on the multi-model benchmarks.</p>
+<section id="hallucination-detection" class="level2">
+<h2 class="anchored" data-anchor-id="hallucination-detection">Hallucination detection from model internals</h2>
+<p>Ongoing work on detecting contextual hallucinations in retrieval-augmented generation from the model’s internal computation. When a language model answers from a retrieved document, its attention heads mix evidence from the context with evidence from the model’s own self-generated tokens. Separating these contributions inside the residual stream yields signals of whether a generated answer is actually supported by the source, both as a training-free groundedness readout and as a supervised hallucination detector.</p>
 <section id="why-it-matters" class="level3">
 <h3 class="anchored" data-anchor-id="why-it-matters">Why it matters</h3>
 <p>For scientific and high-stakes RAG systems, the practical question is often not only whether an answer sounds true, but whether each claim is grounded in the documents provided to the model.</p>
@@ -190,8 +184,19 @@ ul.task-list li input[type="checkbox"] {
 <section id="poster" class="level3">
 <h3 class="anchored" data-anchor-id="poster">Poster</h3>
 <p>This project was adapted into a collaboration-oriented poster for the AI Grid Summer School “AI for Science”, Paris 2026.</p>
-<p><a href="assets/papers/castle2026sumlessparts.pdf">PDF</a></p>
 </section>
+</section>
+<section id="guardrail" class="level2">
+<h2 class="anchored" data-anchor-id="guardrail">GUARDRAIL</h2>
+<p><strong>Grounded Uncertainty-Aware Reasoning with Deferrable, Reliable Abstention In LLMs</strong></p>
+<p>A Franco-German project proposal developed at the AI For Science 2026 Summer School (AI Grid · DataIA · SCAI), which I coordinate. Partners: DFKI Berlin, University of Bamberg (Cognitive Systems), Lamarr Institute / University of Bonn, Université Paris-Saclay, and INRAE MaIAGE.</p>
+<p>Knowledge graphs enable symbolic fact-checking of LLMs, but current approaches assume the graph itself is reliable. When LLMs are used to build the graph, converting probabilistic outputs into discrete triples strips away the signal of how well each fact is supported by its source, so a KG can end up validating hallucinated claims instead of preventing them.</p>
+<p>GUARDRAIL studies the end-to-end propagation of reliability signals in KG-grounded LLM reasoning for environmental data:</p>
+<ol type="1">
+<li><strong>Uncertainty-aware KG construction</strong> — retain source-groundedness (from interpretability-based source attribution) and citation-network quality signals alongside each extracted triple.</li>
+<li><strong>Reliability-aware retrieval and claim verification</strong> — adapt graph-based retrieval and KG-grounded verification to use these signals, evaluated on climate-related claim verification (ClimateCheck).</li>
+<li><strong>Calibrated abstention</strong> — combine graph reliability, retrieval coverage, and model confidence into an answer-or-defer policy, with a secondary transfer to plant- and pest-related QA.</li>
+</ol>
 </section>
 <section id="explanation-based-drift-detection" class="level2">
 <h2 class="anchored" data-anchor-id="explanation-based-drift-detection">Explanation-based drift detection</h2>

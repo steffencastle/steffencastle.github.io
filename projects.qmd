@@ -14,16 +14,9 @@ Across three summarization benchmarks, DELTA reduces character-length errors by 
 
 [PDF](assets/papers/castle2026delta.pdf)
 
-## Source-specific attention writes for hallucination detection {#source-writes}
+## Hallucination detection from model internals {#hallucination-detection}
 
-**The Sum Is Less Than Its Parts: Decomposing the Attention Write by Source Detects Contextual Hallucinations** — BlackboxNLP 2026 (extended abstract)
-
-When a language model answers from a retrieved document, its attention heads mix evidence from the context with evidence from the model's own self-generated tokens and write the *sum* into the residual stream. This work splits each head's write into these two source-specific contributions before they are summed, and finds that the two sides do complementary jobs:
-
-1. the **context** write, read out along the model's unembedding, gives a training-free groundedness score;
-2. the **response** write (its magnitude and its directional agreement with the other residual writes) gives a supervised contextual-hallucination detector.
-
-Across grounded-generation benchmarks and model families, the supervised detector beats prior internal-state detectors, and the training-free readout is the strongest label-free groundedness signal on the multi-model benchmarks.
+Ongoing work on detecting contextual hallucinations in retrieval-augmented generation from the model's internal computation. When a language model answers from a retrieved document, its attention heads mix evidence from the context with evidence from the model's own self-generated tokens. Separating these contributions inside the residual stream yields signals of whether a generated answer is actually supported by the source, both as a training-free groundedness readout and as a supervised hallucination detector.
 
 ### Why it matters
 
@@ -33,7 +26,19 @@ For scientific and high-stakes RAG systems, the practical question is often not 
 
 This project was adapted into a collaboration-oriented poster for the AI Grid Summer School "AI for Science", Paris 2026.
 
-[PDF](assets/papers/castle2026sumlessparts.pdf)
+## GUARDRAIL {#guardrail}
+
+**Grounded Uncertainty-Aware Reasoning with Deferrable, Reliable Abstention In LLMs**
+
+A Franco-German project proposal developed at the AI For Science 2026 Summer School (AI Grid · DataIA · SCAI), which I coordinate. Partners: DFKI Berlin, University of Bamberg (Cognitive Systems), Lamarr Institute / University of Bonn, Université Paris-Saclay, and INRAE MaIAGE.
+
+Knowledge graphs enable symbolic fact-checking of LLMs, but current approaches assume the graph itself is reliable. When LLMs are used to build the graph, converting probabilistic outputs into discrete triples strips away the signal of how well each fact is supported by its source, so a KG can end up validating hallucinated claims instead of preventing them.
+
+GUARDRAIL studies the end-to-end propagation of reliability signals in KG-grounded LLM reasoning for environmental data:
+
+1. **Uncertainty-aware KG construction** — retain source-groundedness (from interpretability-based source attribution) and citation-network quality signals alongside each extracted triple.
+2. **Reliability-aware retrieval and claim verification** — adapt graph-based retrieval and KG-grounded verification to use these signals, evaluated on climate-related claim verification (ClimateCheck).
+3. **Calibrated abstention** — combine graph reliability, retrieval coverage, and model confidence into an answer-or-defer policy, with a secondary transfer to plant- and pest-related QA.
 
 ## Explanation-based drift detection
 

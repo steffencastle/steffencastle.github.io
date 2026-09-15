@@ -76,8 +76,14 @@ Adapting attribution methods (ALTI, Integrated Gradients) to pairwise embedding 
 
 ::: {.timeline-item}
 **2025–2026**  
-**Hallucination detection from source-specific attention writes**  
-Decomposing each attention head's residual write into context and response contributions to detect unsupported RAG answers (BlackboxNLP 2026).
+**Hallucination detection from model internals**  
+Separating context-derived from self-generated contributions inside the model to detect unsupported RAG answers.
+:::
+
+::: {.timeline-item}
+**2026**  
+**GUARDRAIL: reliability-aware knowledge graphs**  
+Franco-German AI for Science project on propagating source-reliability signals from KG construction through retrieval, claim verification, and abstention.
 :::
 
 ::: {.timeline-item}
@@ -98,10 +104,10 @@ Training-free character-length control in summarization with masked diffusion LM
 :::
 
 ::: {.card}
-### BlackboxNLP 2026
-Decomposing the attention write by source to detect contextual hallucinations in RAG.
+### GUARDRAIL
+Uncertainty-aware knowledge graphs and calibrated abstention for environmental claim verification. Franco-German AI for Science project.
 
-[Project page →](projects.qmd#source-writes)
+[Project page →](projects.qmd#guardrail)
 :::
 
 ::: {.card}
@@ -113,7 +119,7 @@ Explainability-driven AI reliability with industry partner **Celonis**.
 
 ::: {.card}
 ### Publications
-Work on diffusion LMs, hallucination detection, explainability, drift detection, and LLM-based entity linking.
+Work on diffusion LMs, explainability, drift detection, biomedical NLP, and LLM-based entity linking.
 
 [Publications →](publications.qmd)
 :::
