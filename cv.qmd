@@ -25,7 +25,8 @@ University of Sheffield, UK
 
 ## Selected experience
 
-- **DFKI** — Researcher / PhD Student
+- **DFKI** — Researcher / PhD Student (2020–present)  
+  Projects: XPO (Software Campus, Celonis), GenKI4Media, Green-AI Hub Mittelstand, Data4Transparency, PLASS
 - **DFKI** — Master Thesis Research Student
 - **SAP Machine Learning Research Group** — Research Student
 - **Hasso-Plattner-Institut** — Student Research Assistant

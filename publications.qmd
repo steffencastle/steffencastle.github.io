@@ -2,7 +2,7 @@
 title: "Publications"
 ---
 
-- **Steffen Castle**, Nils Feldhus, Christopher Ebert, Leonhard Hennig, Sebastian Möller. *Training-Free Character-Length Control in Summarization with Diffusion Language Models*. EMNLP 2026. [[PDF](assets/papers/castle2026delta.pdf)]
+- **Steffen Castle**, Nils Feldhus, Christopher Ebert, Leonhard Hennig, Sebastian Möller. *Training-Free Character-Length Control in Summarization with Diffusion Language Models*. EMNLP 2026 (main conference). [[PDF](assets/papers/castle2026delta.pdf)]
 
 - **Steffen Castle**, Julian Moreno Schneider, Leonhard Hennig, Georg Rehm. *Entity Linking using LLMs for Automated Product Carbon Footprint Estimation*. Proceedings of the 1st Workshop on Ecology, Environment, and Natural Language Processing. Tallinn, Estonia, 2025.
 

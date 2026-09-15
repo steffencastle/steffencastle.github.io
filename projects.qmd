@@ -4,9 +4,9 @@ title: "Projects"
 
 ## Character-length control with diffusion language models {#delta}
 
-**Training-Free Character-Length Control in Summarization with Diffusion Language Models** — EMNLP 2026
+**Training-Free Character-Length Control in Summarization with Diffusion Language Models** — EMNLP 2026 (main conference)
 
-Summarization with a fixed character length matters for headlines, article previews, notifications, subtitles, and UI text, where output must fit an exact space. Autoregressive models struggle with precise character-length control: training-based methods need task-specific fine-tuning, and zero-shot prompting only achieves approximate compliance.
+This work grew out of [GenKI4Media](#genki4media), where editorial partners such as dpa and Deutsche Welle need generated text to fit predefined display slots. Summarization with a fixed character length matters for headlines, article previews, notifications, subtitles, and UI text, where even a few extra characters cause truncation or layout overflow. Autoregressive models struggle with precise character-length control: training-based methods need task-specific fine-tuning, and zero-shot prompting only achieves approximate compliance.
 
 **DELTA** (Diffusion Expected Length Targeting Algorithm) is a training-free, inference-time method for masked diffusion LMs. At each denoising step it estimates the expected character length of the output and dynamically inserts or removes masked positions to steer toward the target length. It requires no fine-tuning and works with off-the-shelf masked diffusion LMs (e.g. LLaDA, Dream).
 
@@ -16,7 +16,7 @@ Across three summarization benchmarks, DELTA reduces character-length errors by 
 
 ## Hallucination detection from model internals {#hallucination-detection}
 
-Ongoing work on detecting contextual hallucinations in retrieval-augmented generation from the model's internal computation. When a language model answers from a retrieved document, its attention heads mix evidence from the context with evidence from the model's own self-generated tokens. Separating these contributions inside the residual stream yields signals of whether a generated answer is actually supported by the source, both as a training-free groundedness readout and as a supervised hallucination detector.
+Ongoing work within [GenKI4Media](#genki4media) on detecting contextual hallucinations in retrieval-augmented generation from the model's internal computation. When a language model answers from a retrieved document, its attention heads mix evidence from the context with evidence from the model's own self-generated tokens. Separating these contributions inside the residual stream yields signals of whether a generated answer is actually supported by the source, both as a training-free groundedness readout and as a supervised hallucination detector.
 
 ### Why it matters
 
@@ -40,10 +40,32 @@ GUARDRAIL studies the end-to-end propagation of reliability signals in KG-ground
 2. **Reliability-aware retrieval and claim verification** — adapt graph-based retrieval and KG-grounded verification to use these signals, evaluated on climate-related claim verification (ClimateCheck).
 3. **Calibrated abstention** — combine graph reliability, retrieval coverage, and model confidence into an answer-or-defer policy, with a secondary transfer to plant- and pest-related QA.
 
-## Explanation-based drift detection
+## GenKI4Media {#genki4media}
 
-This work studies how explanation signals can be used to identify covariate drift. The motivation is to use interpretability methods as practical model-monitoring tools rather than only as human-facing explanations.
+**Generative AI assistants for the media, cultural and creative sectors** (BMFTR, 2025–present)
 
-## Entity linking for product carbon footprint estimation
+A consortium project with 3pc, ART+COM, Fraunhofer FOKUS, dpa, and Deutsche Welle building generative AI assistants for editorial work. DFKI's sub-project develops methods to improve the transparency, traceability, and trustworthiness of AI-generated content: relating generated text to external sources, validating it against them, and correcting it where necessary. My work in the project covers hallucination detection from model internals and length-controlled summarization with diffusion LMs (see above).
 
-This project applies language models and entity linking to map manufactured components to environmental impact databases, supporting automated product carbon footprint estimation.
+## XPO — Software Campus {#xpo}
+
+**Explainability-guided prompt optimization and repair** (Software Campus, industry partner Celonis, 2026)
+
+Project lead for a 12-month research project on using explainability signals to diagnose and repair prompts in agentic LLM workflows, with the goal of making such workflows more reliable in enterprise process settings.
+
+## Data4Transparency {#data4transparency}
+
+**Information extraction for investigative journalism** (2023–2024, with OCCRP)
+
+Investigative journalists working with the Organized Crime and Corruption Reporting Project receive large leaked document collections with little labelled data. This project developed enhanced search over such document dumps using few-shot joint named-entity recognition and relation extraction, so that entities and their connections can be surfaced at scale.
+
+## Green-AI Hub — entity linking for product carbon footprint estimation {#green-ai-hub}
+
+**Green-AI Hub Mittelstand** (BMUV, 2024)
+
+A pilot project with a manufacturing SME applying LLM-based semantic similarity and entity linking to map manufactured components to environmental impact databases, automating the computation of product carbon footprints. Published as *Entity Linking using LLMs for Automated Product Carbon Footprint Estimation* (2025).
+
+## PLASS — explanation-based drift detection {#plass}
+
+**Platform for Analytical Supply Chain Management Services** (BMWi, 2020–2022, led by Siemens)
+
+PLASS built a B2B platform for AI-based supply-chain risk monitoring, extracting decision-relevant information from multilingual news. My work covered relation extraction and, in particular, how explanation signals can identify covariate drift in deployed models — using interpretability methods as practical model-monitoring tools rather than only as human-facing explanations (*Detecting Covariate Drift with Explanations*, NLPCC XAI workshop 2021).
