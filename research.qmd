@@ -12,6 +12,7 @@ Current directions:
 
 - detecting contextual hallucinations in retrieval-augmented generation,
 - using model-internal features for evaluation and reliability,
+- controllable generation with masked diffusion language models,
 - explanation-based covariate drift detection,
 - interpretable NLP systems for information extraction and document understanding,
 - reliable AI workflows for science and industry.

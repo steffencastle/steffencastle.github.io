@@ -2,17 +2,28 @@
 title: "Projects"
 ---
 
-## GroundHOG
+## Character-length control with diffusion language models {#delta}
 
-**Grounding via Head-wise Output Gram Features**
+**Training-Free Character-Length Control in Summarization with Diffusion Language Models** — EMNLP 2026
 
-GroundHOG is a method for detecting contextual hallucination in retrieval-augmented question answering. It decomposes model-internal writes into three sources:
+Summarization with a fixed character length matters for headlines, article previews, notifications, subtitles, and UI text, where output must fit an exact space. Autoregressive models struggle with precise character-length control: training-based methods need task-specific fine-tuning, and zero-shot prompting only achieves approximate compliance.
 
-1. retrieved context,
-2. response history,
-3. feed-forward / parametric computation.
+**DELTA** (Diffusion Expected Length Targeting Algorithm) is a training-free, inference-time method for masked diffusion LMs. At each denoising step it estimates the expected character length of the output and dynamically inserts or removes masked positions to steer toward the target length. It requires no fine-tuning and works with off-the-shelf masked diffusion LMs (e.g. LLaDA, Dream).
 
-The method compares the magnitudes and interactions of these writes using per-head Gram features, then uses sparse classifiers or training-free readouts to detect when a generated answer is unsupported by the source.
+Across three summarization benchmarks, DELTA reduces character-length errors by an order of magnitude compared to baselines while maintaining competitive summary quality in both automatic and human evaluation.
+
+[PDF](assets/papers/castle2026delta.pdf)
+
+## Source-specific attention writes for hallucination detection {#source-writes}
+
+**The Sum Is Less Than Its Parts: Decomposing the Attention Write by Source Detects Contextual Hallucinations** — BlackboxNLP 2026 (extended abstract)
+
+When a language model answers from a retrieved document, its attention heads mix evidence from the context with evidence from the model's own self-generated tokens and write the *sum* into the residual stream. This work splits each head's write into these two source-specific contributions before they are summed, and finds that the two sides do complementary jobs:
+
+1. the **context** write, read out along the model's unembedding, gives a training-free groundedness score;
+2. the **response** write (its magnitude and its directional agreement with the other residual writes) gives a supervised contextual-hallucination detector.
+
+Across grounded-generation benchmarks and model families, the supervised detector beats prior internal-state detectors, and the training-free readout is the strongest label-free groundedness signal on the multi-model benchmarks.
 
 ### Why it matters
 
@@ -20,7 +31,9 @@ For scientific and high-stakes RAG systems, the practical question is often not 
 
 ### Poster
 
-This project was adapted into a collaboration-oriented poster for the AI Grid Summer School “AI for Science”, Paris 2026.
+This project was adapted into a collaboration-oriented poster for the AI Grid Summer School "AI for Science", Paris 2026.
+
+[PDF](assets/papers/castle2026sumlessparts.pdf)
 
 ## Explanation-based drift detection
 

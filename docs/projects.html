@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d425ec33809d3b3728ed5fa4159699e2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-be2317aa6ea6db609d9a7b1d6a3ad0d2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -166,16 +166,23 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="groundhog" class="level2">
-<h2 class="anchored" data-anchor-id="groundhog">GroundHOG</h2>
-<p><strong>Grounding via Head-wise Output Gram Features</strong></p>
-<p>GroundHOG is a method for detecting contextual hallucination in retrieval-augmented question answering. It decomposes model-internal writes into three sources:</p>
+<section id="delta" class="level2">
+<h2 class="anchored" data-anchor-id="delta">Character-length control with diffusion language models</h2>
+<p><strong>Training-Free Character-Length Control in Summarization with Diffusion Language Models</strong> — EMNLP 2026</p>
+<p>Summarization with a fixed character length matters for headlines, article previews, notifications, subtitles, and UI text, where output must fit an exact space. Autoregressive models struggle with precise character-length control: training-based methods need task-specific fine-tuning, and zero-shot prompting only achieves approximate compliance.</p>
+<p><strong>DELTA</strong> (Diffusion Expected Length Targeting Algorithm) is a training-free, inference-time method for masked diffusion LMs. At each denoising step it estimates the expected character length of the output and dynamically inserts or removes masked positions to steer toward the target length. It requires no fine-tuning and works with off-the-shelf masked diffusion LMs (e.g.&nbsp;LLaDA, Dream).</p>
+<p>Across three summarization benchmarks, DELTA reduces character-length errors by an order of magnitude compared to baselines while maintaining competitive summary quality in both automatic and human evaluation.</p>
+<p><a href="assets/papers/castle2026delta.pdf">PDF</a></p>
+</section>
+<section id="source-writes" class="level2">
+<h2 class="anchored" data-anchor-id="source-writes">Source-specific attention writes for hallucination detection</h2>
+<p><strong>The Sum Is Less Than Its Parts: Decomposing the Attention Write by Source Detects Contextual Hallucinations</strong> — BlackboxNLP 2026 (extended abstract)</p>
+<p>When a language model answers from a retrieved document, its attention heads mix evidence from the context with evidence from the model’s own self-generated tokens and write the <em>sum</em> into the residual stream. This work splits each head’s write into these two source-specific contributions before they are summed, and finds that the two sides do complementary jobs:</p>
 <ol type="1">
-<li>retrieved context,</li>
-<li>response history,</li>
-<li>feed-forward / parametric computation.</li>
+<li>the <strong>context</strong> write, read out along the model’s unembedding, gives a training-free groundedness score;</li>
+<li>the <strong>response</strong> write (its magnitude and its directional agreement with the other residual writes) gives a supervised contextual-hallucination detector.</li>
 </ol>
-<p>The method compares the magnitudes and interactions of these writes using per-head Gram features, then uses sparse classifiers or training-free readouts to detect when a generated answer is unsupported by the source.</p>
+<p>Across grounded-generation benchmarks and model families, the supervised detector beats prior internal-state detectors, and the training-free readout is the strongest label-free groundedness signal on the multi-model benchmarks.</p>
 <section id="why-it-matters" class="level3">
 <h3 class="anchored" data-anchor-id="why-it-matters">Why it matters</h3>
 <p>For scientific and high-stakes RAG systems, the practical question is often not only whether an answer sounds true, but whether each claim is grounded in the documents provided to the model.</p>
@@ -183,6 +190,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="poster" class="level3">
 <h3 class="anchored" data-anchor-id="poster">Poster</h3>
 <p>This project was adapted into a collaboration-oriented poster for the AI Grid Summer School “AI for Science”, Paris 2026.</p>
+<p><a href="assets/papers/castle2026sumlessparts.pdf">PDF</a></p>
 </section>
 </section>
 <section id="explanation-based-drift-detection" class="level2">

@@ -79,10 +79,17 @@ Detecting unsupported RAG answers from source-specific residual-stream writes.
 
 ::: {.cards}
 ::: {.card}
-### GroundHOG
-Detecting contextual hallucinations in RAG from source-specific residual writes.
+### EMNLP 2026
+Training-free character-length control in summarization with masked diffusion LMs (DELTA).
 
-[Project page →](projects.qmd#groundhog)
+[Project page →](projects.qmd#delta)
+:::
+
+::: {.card}
+### BlackboxNLP 2026
+Decomposing the attention write by source to detect contextual hallucinations in RAG.
+
+[Project page →](projects.qmd#source-writes)
 :::
 
 ::: {.card}
@@ -94,7 +101,7 @@ Explainability-driven AI reliability with industry partner **Celonis**.
 
 ::: {.card}
 ### Publications
-Work on explainability, drift detection, biomedical NLP, and LLM-based entity linking.
+Work on diffusion LMs, hallucination detection, explainability, drift detection, and LLM-based entity linking.
 
 [Publications →](publications.qmd)
 :::
