@@ -177,6 +177,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="hallucination-detection" class="level2">
 <h2 class="anchored" data-anchor-id="hallucination-detection">Hallucination detection from model internals</h2>
 <p>Ongoing work within <a href="#genki4media">GenKI4Media</a> on detecting contextual hallucinations in retrieval-augmented generation from the model’s internal computation. When a language model answers from a retrieved document, its attention heads mix evidence from the context with evidence from the model’s own self-generated tokens. Separating these contributions inside the residual stream yields signals of whether a generated answer is actually supported by the source, both as a training-free groundedness readout and as a supervised hallucination detector.</p>
+<p>An extended abstract of this work appears at BlackboxNLP 2026 (co-located with EMNLP 2026); a full paper is forthcoming.</p>
 <section id="why-it-matters" class="level3">
 <h3 class="anchored" data-anchor-id="why-it-matters">Why it matters</h3>
 <p>For scientific and high-stakes RAG systems, the practical question is often not only whether an answer sounds true, but whether each claim is grounded in the documents provided to the model.</p>
@@ -216,12 +217,12 @@ ul.task-list li input[type="checkbox"] {
 <section id="green-ai-hub" class="level2">
 <h2 class="anchored" data-anchor-id="green-ai-hub">Green-AI Hub — entity linking for product carbon footprint estimation</h2>
 <p><strong>Green-AI Hub Mittelstand</strong> (BMUV, 2024)</p>
-<p>A pilot project with a manufacturing SME applying LLM-based semantic similarity and entity linking to map manufactured components to environmental impact databases, automating the computation of product carbon footprints. Published as <em>Entity Linking using LLMs for Automated Product Carbon Footprint Estimation</em> (2025).</p>
+<p>A pilot project with a manufacturing SME applying LLM-based semantic similarity and entity linking to map manufactured components to environmental impact databases, automating the computation of product carbon footprints. Published as <em>Entity Linking using LLMs for Automated Product Carbon Footprint Estimation</em> (2025). <a href="assets/papers/castle2025ecolink.pdf">PDF</a></p>
 </section>
 <section id="plass" class="level2">
 <h2 class="anchored" data-anchor-id="plass">PLASS — explanation-based drift detection</h2>
 <p><strong>Platform for Analytical Supply Chain Management Services</strong> (BMWi, 2020–2022, led by Siemens)</p>
-<p>PLASS built a B2B platform for AI-based supply-chain risk monitoring, extracting decision-relevant information from multilingual news. My work covered relation extraction and, in particular, how explanation signals can identify covariate drift in deployed models — using interpretability methods as practical model-monitoring tools rather than only as human-facing explanations (<em>Detecting Covariate Drift with Explanations</em>, NLPCC XAI workshop 2021).</p>
+<p>PLASS built a B2B platform for AI-based supply-chain risk monitoring, extracting decision-relevant information from multilingual news. My work covered relation extraction and, in particular, how explanation signals can identify covariate drift in deployed models — using interpretability methods as practical model-monitoring tools rather than only as human-facing explanations (<em>Detecting Covariate Drift with Explanations</em>, NLPCC XAI workshop 2021). <a href="https://www.dfki.de/fileadmin/user_upload/import/11753_Detecting_Covariate_Drift_with_Explanations.pdf">PDF</a> · <a href="https://github.com/DFKI-NLP/xai-shift-detection">Code</a></p>
 
 
 </section>

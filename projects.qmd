@@ -18,6 +18,8 @@ Across three summarization benchmarks, DELTA reduces character-length errors by 
 
 Ongoing work within [GenKI4Media](#genki4media) on detecting contextual hallucinations in retrieval-augmented generation from the model's internal computation. When a language model answers from a retrieved document, its attention heads mix evidence from the context with evidence from the model's own self-generated tokens. Separating these contributions inside the residual stream yields signals of whether a generated answer is actually supported by the source, both as a training-free groundedness readout and as a supervised hallucination detector.
 
+An extended abstract of this work appears at BlackboxNLP 2026 (co-located with EMNLP 2026); a full paper is forthcoming.
+
 ### Why it matters
 
 For scientific and high-stakes RAG systems, the practical question is often not only whether an answer sounds true, but whether each claim is grounded in the documents provided to the model.
@@ -62,10 +64,10 @@ Investigative journalists working with the Organized Crime and Corruption Report
 
 **Green-AI Hub Mittelstand** (BMUV, 2024)
 
-A pilot project with a manufacturing SME applying LLM-based semantic similarity and entity linking to map manufactured components to environmental impact databases, automating the computation of product carbon footprints. Published as *Entity Linking using LLMs for Automated Product Carbon Footprint Estimation* (2025).
+A pilot project with a manufacturing SME applying LLM-based semantic similarity and entity linking to map manufactured components to environmental impact databases, automating the computation of product carbon footprints. Published as *Entity Linking using LLMs for Automated Product Carbon Footprint Estimation* (2025). [PDF](assets/papers/castle2025ecolink.pdf)
 
 ## PLASS — explanation-based drift detection {#plass}
 
 **Platform for Analytical Supply Chain Management Services** (BMWi, 2020–2022, led by Siemens)
 
-PLASS built a B2B platform for AI-based supply-chain risk monitoring, extracting decision-relevant information from multilingual news. My work covered relation extraction and, in particular, how explanation signals can identify covariate drift in deployed models — using interpretability methods as practical model-monitoring tools rather than only as human-facing explanations (*Detecting Covariate Drift with Explanations*, NLPCC XAI workshop 2021).
+PLASS built a B2B platform for AI-based supply-chain risk monitoring, extracting decision-relevant information from multilingual news. My work covered relation extraction and, in particular, how explanation signals can identify covariate drift in deployed models — using interpretability methods as practical model-monitoring tools rather than only as human-facing explanations (*Detecting Covariate Drift with Explanations*, NLPCC XAI workshop 2021). [PDF](https://www.dfki.de/fileadmin/user_upload/import/11753_Detecting_Covariate_Drift_with_Explanations.pdf) · [Code](https://github.com/DFKI-NLP/xai-shift-detection)

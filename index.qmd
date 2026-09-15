@@ -89,7 +89,7 @@ Adapting attribution methods (ALTI, Integrated Gradients) to pairwise embedding 
 ::: {.timeline-item}
 **2025–present**  
 **GenKI4Media — trustworthy generative AI for the media sector**  
-Methods for the transparency, traceability, and accuracy of AI-generated editorial content (BMFTR, with dpa and Deutsche Welle). Two strands: detecting unsupported RAG answers from model internals, and DELTA, training-free character-length control for masked diffusion LMs (EMNLP 2026).
+Methods for the transparency, traceability, and accuracy of AI-generated editorial content (BMFTR, with dpa and Deutsche Welle). Two strands: detecting unsupported RAG answers from model internals (extended abstract at BlackboxNLP 2026, full paper forthcoming), and DELTA, training-free character-length control for masked diffusion LMs (EMNLP 2026).
 :::
 
 ::: {.timeline-item}
