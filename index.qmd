@@ -63,15 +63,27 @@ Explanation signals as operational tools for detecting covariate shift.
 :::
 
 ::: {.timeline-item}
-**2024–present**  
-**PhD: explanations as signals to improve AI systems**  
-Using model explanations for evaluation, monitoring, and reliability.
+**2023**  
+**PhD: machine-internal uses of explainability**  
+Thesis topic *Beyond Human Interaction: Alternative Applications for Explanations*. Rather than producing explanations for people to read, the thesis asks whether attribution signals can serve AI systems directly: detecting distribution shift, improving retrieval, and verifying factuality.
 :::
 
 ::: {.timeline-item}
-**Current**  
-**Mechanistic grounding and hallucination detection**  
-Detecting unsupported RAG answers from source-specific residual-stream writes.
+**2024–2025**  
+**Explaining embedding similarity for retrieval**  
+Adapting attribution methods (ALTI, Integrated Gradients) to pairwise embedding similarity, and using token-level attributions to rerank retrieved documents for RAG.
+:::
+
+::: {.timeline-item}
+**2025–2026**  
+**Hallucination detection from source-specific attention writes**  
+Decomposing each attention head's residual write into context and response contributions to detect unsupported RAG answers (BlackboxNLP 2026).
+:::
+
+::: {.timeline-item}
+**2026**  
+**Controllable generation with diffusion language models**  
+DELTA: training-free character-length control for masked diffusion LMs (EMNLP 2026).
 :::
 :::
 

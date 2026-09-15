@@ -17,6 +17,16 @@ Current directions:
 - interpretable NLP systems for information extraction and document understanding,
 - reliable AI workflows for science and industry.
 
+## PhD thesis
+
+**Beyond Human Interaction: Alternative Applications for Explanations** (TU Berlin / DFKI, since 2023)
+
+Traditional XAI produces explanations for humans to read. My thesis instead treats attribution methods (Integrated Gradients, ALTI, LRP, and mechanistic decompositions of the residual stream) as internal signals that an AI system can consume itself. It is organised around three questions:
+
+1. **Can explanations detect when the input distribution changes?** Attribution patterns shift before performance drops, enabling label-free drift detection.
+2. **Can explanations improve retrieval in RAG systems?** Token-level attribution for pairwise embedding similarity, and attribution-based reranking of retrieved documents.
+3. **Can explanations verify factuality?** Tracking which source tokens influence each generated token to detect contextual hallucinations and attach citations.
+
 ## Explainability as an engineering signal
 
 A recurring theme in my work is that explanations can be used to **improve** AI systems, not only to explain them after the fact. This includes model monitoring, drift detection, model evaluation, and mechanistic diagnostics.
