@@ -147,20 +147,17 @@ main.content > p:first-child { margin-top: 2.5rem; }
 /* ---------- affiliations ---------- */
 .affiliations {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.45rem 3rem;
   margin: 0 0 3.5rem;
-  padding: 1.5rem 0;
+  padding: 1.1rem 0;
   border-bottom: 1px solid $rule;
 }
-.affiliation { font-size: 0.92rem; line-height: 1.45; color: $ink-soft; }
-.affiliation p { margin: 0; }
-.affiliation p > strong:first-child {
-  display: block;
-  color: $ink;
-  font-weight: 600;
-  margin-bottom: 0.15rem;
-}
+.affiliation { font-size: 0.9rem; line-height: 1.45; color: $ink-soft; }
+.affiliation p { margin: 0; max-width: none; }
+.affiliation p > strong:first-child { color: $ink; font-weight: 600; }
+.affiliation p > strong:first-child::after { content: " · "; color: $rule-strong; font-weight: 400; }
+.affiliation p > strong:first-child + br { display: none; }
 
 /* ---------- timeline ---------- */
 .timeline { margin: 0 0 4rem; }
@@ -259,7 +256,6 @@ ol.pubs > li::before {
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; gap: 2rem; padding-top: 2.5rem; }
   .hero-photo { order: -1; max-width: 180px; }
-  .affiliations { grid-template-columns: 1fr 1fr; gap: 1.25rem; }
   .cards { grid-template-columns: 1fr; }
 }
 @media (max-width: 600px) {
