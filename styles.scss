@@ -1,102 +1,93 @@
 /*-- scss:defaults --*/
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-$paper: #f6f2ea;
-$paper-deep: #ece6da;
-$ink: #1c1a17;
-$ink-soft: #55504a;
-$rule: #cfc7b8;
-$accent: #9a3b1e;
+$bg: #ffffff;
+$ink: #17181a;
+$ink-soft: #5b5f66;
+$rule: #e6e7ea;
+$rule-strong: #c9ccd1;
+$accent: #0f766e;
+$accent-soft: #e6f2f0;
 
-$body-bg: $paper;
+$body-bg: $bg;
 $body-color: $ink;
 $link-color: $accent;
 $primary: $accent;
-$font-family-sans-serif: "Newsreader", Georgia, "Times New Roman", serif;
-$font-family-monospace: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
-$font-size-root: 18px;
-$headings-font-weight: 500;
-$navbar-bg: $paper;
+$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+$font-size-root: 16px;
+$navbar-bg: $bg;
 $navbar-fg: $ink;
 $navbar-hl: $accent;
 
 /*-- scss:rules --*/
 body {
-  font-family: "Newsreader", Georgia, serif;
-  font-optical-sizing: auto;
-  line-height: 1.55;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  font-feature-settings: "cv11", "ss01";
 }
 
 h1, h2, h3, h4 {
-  font-family: "Newsreader", Georgia, serif;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: -0.015em;
   color: $ink;
 }
 
-a {
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.18em;
-  text-decoration-color: rgba($accent, 0.5);
-}
-a:hover { text-decoration-color: $accent; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 0.15em; }
 
-.mono, .eyebrow, .timeline-year, .pub-venue, .navbar .nav-link, .navbar .navbar-brand, .affiliation p > strong:first-child {
-  font-family: "JetBrains Mono", ui-monospace, monospace;
+.label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $ink-soft;
 }
 
 /* ---------- navbar ---------- */
 .navbar {
-  background: $paper;
+  background: $bg;
   border-bottom: 1px solid $rule;
   box-shadow: none;
-  padding-top: 0.9rem;
-  padding-bottom: 0.9rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
 }
-.navbar .navbar-brand {
-  font-size: 0.8rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: $ink;
-}
-.navbar .nav-link {
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: $ink-soft !important;
-}
-.navbar .nav-link:hover,
-.navbar .nav-link.active { color: $accent !important; }
+.navbar .navbar-brand { font-weight: 600; font-size: 0.95rem; color: $ink; }
+.navbar .nav-link { font-size: 0.88rem; font-weight: 500; color: $ink-soft !important; }
+.navbar .nav-link:hover, .navbar .nav-link.active { color: $accent !important; }
 .navbar .bi { color: $ink-soft; }
 .navbar-toggler { border-color: $rule; }
 
 /* ---------- layout ---------- */
 .page-layout-full .content,
 #quarto-content .content {
-  max-width: 1080px;
+  max-width: 980px;
   margin: 0 auto;
   padding: 0 1.5rem 5rem;
 }
 
-#title-block-header { margin: 3.5rem 0 0.5rem; }
+#title-block-header { margin: 3rem 0 0.5rem; }
 #title-block-header .title {
-  font-size: clamp(2.6rem, 6vw, 4.2rem);
-  font-weight: 400;
-  letter-spacing: -0.03em;
-  line-height: 1;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
   margin: 0;
-  padding-bottom: 1.2rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid $rule;
 }
 .quarto-title-meta { display: none; }
 
-section.level2 { margin-top: 3rem; }
-section.level2:first-of-type { margin-top: 2.5rem; }
+section.level2 { margin-top: 2.75rem; }
+section.level2 > h2, main.content > h2 {
+  @extend .label;
+  color: $accent;
+  border-bottom: 1px solid $rule;
+  padding-bottom: 0.5rem;
+  margin: 0 0 1.25rem;
+}
 section.level2 > h3, main.content > h3 {
-  font-size: 1rem;
-  font-style: italic;
-  font-weight: 500;
+  font-size: 1.05rem;
+  font-weight: 600;
   margin-top: 1.5rem;
 }
 main.content p, main.content li { max-width: 68ch; }
@@ -105,232 +96,172 @@ main.content > p:first-child { margin-top: 2.5rem; }
 /* ---------- hero ---------- */
 .hero {
   display: grid;
-  grid-template-columns: 1fr minmax(220px, 300px);
-  gap: 4rem;
-  align-items: end;
-  padding: 4.5rem 0 3rem;
+  grid-template-columns: 1fr 240px;
+  gap: 3.5rem;
+  align-items: center;
+  padding: 4rem 0 3rem;
   border-bottom: 1px solid $rule;
 }
-.hero h1 {
-  font-size: clamp(3.2rem, 8vw, 6.2rem);
-  line-height: 0.92;
-  font-weight: 400;
-  letter-spacing: -0.03em;
-  margin: 0 0 1.5rem;
-}
-.hero h1 em { font-style: italic; font-weight: 300; color: $accent; }
 .hero h2 {
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.72rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: $ink-soft;
+  @extend .label;
   margin: 0 0 1rem;
-  font-weight: 500;
 }
+.hero h1 {
+  font-size: clamp(2.6rem, 6vw, 4rem);
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin: 0 0 1.25rem;
+}
+.hero h1 em { font-style: normal; color: $accent; }
 .hero p {
-  font-size: 1.28rem;
-  line-height: 1.45;
-  font-weight: 300;
-  max-width: 34em;
-  margin-bottom: 1.2rem;
+  font-size: 1.15rem;
+  line-height: 1.55;
+  color: $ink-soft;
+  max-width: 36em;
+  margin-bottom: 1rem;
 }
-.hero p strong { font-weight: 500; }
 .hero-photo img {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-  filter: grayscale(100%) contrast(1.05);
-  border: 1px solid $rule;
-  outline: 1px solid $rule;
-  outline-offset: 6px;
-  transition: filter 0.4s ease;
+  border-radius: 6px;
 }
-.hero-photo img:hover { filter: none; }
-
-.hero-buttons { display: flex; flex-wrap: wrap; gap: 1.6rem; margin-top: 1.8rem; }
+.hero-buttons { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.5rem; }
 .btn, .btn-primary, .btn-secondary {
   all: unset;
   cursor: pointer;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.74rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 0.5rem 0.95rem;
+  border-radius: 6px;
+  border: 1px solid $rule-strong;
   color: $ink !important;
-  border-bottom: 1px solid $ink;
-  padding-bottom: 0.15rem;
 }
-.btn:hover { color: $accent !important; border-color: $accent; }
-.btn::after { content: " \2192"; }
+.btn:hover { border-color: $accent; color: $accent !important; text-decoration: none; }
+.btn-primary { background: $accent; border-color: $accent; color: #fff !important; }
+.btn-primary:hover { background: darken($accent, 6%); color: #fff !important; }
 
 /* ---------- affiliations ---------- */
 .affiliations {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 0;
-  margin: 0 0 4rem;
+  gap: 2rem;
+  margin: 0 0 3.5rem;
+  padding: 1.5rem 0;
   border-bottom: 1px solid $rule;
 }
-.affiliation {
-  padding: 1.1rem 1.2rem 1.1rem 0;
-  font-size: 0.95rem;
-  line-height: 1.4;
-  color: $ink-soft;
-  border-right: 1px solid $rule;
-  margin-right: 1.2rem;
-}
-.affiliation:last-child { border-right: 0; margin-right: 0; }
+.affiliation { font-size: 0.92rem; line-height: 1.45; color: $ink-soft; }
+.affiliation p { margin: 0; }
 .affiliation p > strong:first-child {
   display: block;
-  font-size: 0.68rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
   color: $ink;
-  margin-bottom: 0.25rem;
-  font-weight: 500;
-}
-
-/* section headings */
-section.level2 > h2, main.content > h2 {
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.7rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: $ink-soft;
-  border-bottom: 1px solid $rule;
-  padding-bottom: 0.5rem;
-  margin: 0 0 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
 }
 
 /* ---------- timeline ---------- */
-.timeline { margin: 0 0 4.5rem; }
+.timeline { margin: 0 0 4rem; }
 .timeline-item {
   display: grid;
-  grid-template-columns: 9rem 1fr;
-  gap: 2rem;
-  padding: 1.1rem 0;
-  border-bottom: 1px solid $paper-deep;
+  grid-template-columns: 8rem 1fr;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid $rule;
 }
 .timeline-item:last-child { border-bottom: 0; }
 .timeline-item p { margin: 0; }
 .timeline-year {
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
-  color: $ink-soft;
   display: block;
-  padding-top: 0.45rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: $ink-soft;
+  font-variant-numeric: tabular-nums;
+  padding-top: 0.15rem;
 }
-.timeline-item p:last-child { font-size: 1.02rem; color: $ink-soft; max-width: 62ch; }
+.timeline-item p:last-child { font-size: 0.95rem; color: $ink-soft; max-width: 64ch; }
 .timeline-item p:last-child strong {
   display: block;
   color: $ink;
-  font-weight: 500;
-  font-size: 1.15rem;
+  font-weight: 600;
+  font-size: 1.02rem;
   margin-bottom: 0.15rem;
 }
 .timeline-item p:last-child strong + br { display: none; }
 
-/* ---------- highlight cards ---------- */
+/* ---------- selected work ---------- */
 .cards {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0 3rem;
+  gap: 1rem;
   margin-bottom: 4rem;
-  counter-reset: card;
 }
 .card {
-  border: 0;
-  border-top: 1px solid $ink;
-  border-radius: 0;
-  background: transparent;
+  border: 1px solid $rule;
+  border-radius: 8px;
+  background: $bg;
   box-shadow: none;
-  padding: 1rem 0 1.6rem;
+  padding: 1.25rem 1.35rem;
+  transition: border-color 0.15s;
 }
-.card h3 {
-  font-size: 1.35rem;
-  font-weight: 500;
-  margin: 0 0 0.4rem;
-}
-.card h3::before {
-  counter-increment: card;
-  content: counter(card, decimal-leading-zero);
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.68rem;
-  color: $accent;
-  display: block;
-  margin-bottom: 0.5rem;
-  letter-spacing: 0.1em;
-}
-.card p { color: $ink-soft; margin-bottom: 0.6rem; }
-.card p:last-child a {
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.7rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: $ink;
-  border-bottom: 1px solid $ink;
-}
-.card p:last-child a:hover { color: $accent; border-color: $accent; }
+.card:hover { border-color: $rule-strong; }
+.card h3 { font-size: 1.05rem; font-weight: 600; margin: 0 0 0.4rem; }
+.card p { color: $ink-soft; font-size: 0.95rem; margin-bottom: 0.5rem; }
+.card p:last-child { margin-bottom: 0; }
+.card p:last-child a { font-size: 0.88rem; font-weight: 500; }
 
 /* ---------- publications ---------- */
-ol.pubs { list-style: none; padding: 0; margin: 2.5rem 0 0; counter-reset: pub; max-width: none; width: 100%; }
+ol.pubs { list-style: none; padding: 0; margin: 2rem 0 0; counter-reset: pub; max-width: none; width: 100%; }
 ol.pubs > li {
   display: grid;
-  grid-template-columns: 3rem 1fr;
+  grid-template-columns: 2.5rem 1fr;
   gap: 1rem;
-  padding: 1.3rem 0;
-  border-bottom: 1px solid $paper-deep;
+  padding: 1.15rem 0;
+  border-bottom: 1px solid $rule;
   max-width: none;
   margin: 0;
 }
 ol.pubs > li::before {
   counter-increment: pub;
-  content: counter(pub, decimal-leading-zero);
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.72rem;
-  color: $accent;
-  padding-top: 0.45rem;
+  content: counter(pub);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: $ink-soft;
+  font-variant-numeric: tabular-nums;
+  padding-top: 0.15rem;
 }
-.pub-body { max-width: 70ch; }
-.pub-title { font-style: italic; font-size: 1.25rem; line-height: 1.3; color: $ink; margin-bottom: 0.35rem; }
-.pub-authors { color: $ink-soft; font-size: 0.98rem; }
+.pub-body { max-width: 72ch; }
+.pub-title { font-weight: 600; font-size: 1.05rem; line-height: 1.4; color: $ink; margin-bottom: 0.2rem; }
+.pub-authors { color: $ink-soft; font-size: 0.93rem; }
 .pub-authors strong { color: $ink; font-weight: 500; }
-.pub-venue { font-size: 0.7rem; letter-spacing: 0.04em; color: $ink-soft; margin-top: 0.35rem; }
-.pub-links { margin-top: 0.6rem; }
+.pub-venue { color: $ink-soft; font-size: 0.88rem; margin-top: 0.15rem; }
+.pub-links { margin-top: 0.5rem; display: flex; gap: 0.5rem; flex-wrap: wrap; }
 .pub-links a {
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.66rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-bottom: 1px solid $rule;
-  margin-right: 0.9rem;
-  color: $ink;
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 0.15rem 0.55rem;
+  border-radius: 4px;
+  background: $accent-soft;
+  color: $accent;
 }
-.pub-links a:hover { border-color: $accent; color: $accent; }
+.pub-links a:hover { text-decoration: none; background: darken($accent-soft, 5%); }
 
 /* ---------- footer ---------- */
 .nav-footer {
   border-top: 1px solid $rule;
-  background: $paper;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.7rem;
-  letter-spacing: 0.08em;
+  background: $bg;
+  font-size: 0.82rem;
   color: $ink-soft;
 }
 
 /* ---------- responsive ---------- */
-@media (max-width: 950px) {
-  .hero { grid-template-columns: 1fr; gap: 2.5rem; padding-top: 3rem; }
-  .hero-photo { order: -1; max-width: 220px; }
-  .affiliations { grid-template-columns: 1fr 1fr; }
-  .affiliation:nth-child(2n) { border-right: 0; }
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; gap: 2rem; padding-top: 2.5rem; }
+  .hero-photo { order: -1; max-width: 180px; }
+  .affiliations { grid-template-columns: 1fr 1fr; gap: 1.25rem; }
   .cards { grid-template-columns: 1fr; }
 }
-@media (max-width: 620px) {
+@media (max-width: 600px) {
   .affiliations { grid-template-columns: 1fr; }
-  .affiliation { border-right: 0; margin-right: 0; border-bottom: 1px solid $paper-deep; }
-  .timeline-item { grid-template-columns: 1fr; gap: 0.3rem; }
+  .timeline-item { grid-template-columns: 1fr; gap: 0.25rem; }
 }

@@ -6,7 +6,7 @@ pagetitle: "Steffen Castle"
 ::: {.hero-text}
 ## Researcher, DFKI Berlin · PhD Student, TU Berlin
 
-# Steffen *Castle*
+# Steffen Castle
 
 I study how language models use information internally — and how those internal signals can be turned into tools: detecting hallucinations in retrieval-augmented generation, monitoring drift, and controlling generation.
 
