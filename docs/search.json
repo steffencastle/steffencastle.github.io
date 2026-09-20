@@ -1,31 +1,59 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Steffen Castle",
-    "section": "",
-    "text": "Researcher, DFKI Berlin · PhD Student, TU Berlin\n\n\nI study how language models use information internally, and how those internal signals can be turned into tools for detecting hallucinations in retrieval-augmented generation, monitoring drift, and controlling generation.\n\nResearch Projects Contact"
-  },
-  {
-    "objectID": "index.html#research-story",
-    "href": "index.html#research-story",
-    "title": "Steffen Castle",
-    "section": "Research story",
-    "text": "Research story\n\n\n2019–2020\nImproving neural network explanations\nMaster’s research at DFKI on Pattern-Guided Attribution and Pattern-Guided Integrated Gradients.\n\n\n2020–2022\nPLASS: information extraction for supply-chain risk\nRelation extraction and uncertainty quantification for monitoring supply-chain risks in multilingual news (BMWi, with Siemens). Produced Detecting Covariate Drift with Explanations (2021): explanation signals as operational tools for detecting covariate shift.\n\n\n2023\nPhD: machine-internal uses of explainability\nThesis topic Beyond Human Interaction: Alternative Applications for Explanations. Rather than producing explanations for people to read, the thesis asks whether attribution signals can serve AI systems directly: detecting distribution shift, improving retrieval, and verifying factuality.\n\n\n2023–2024\nData4Transparency: information extraction for investigative journalism\nFew-shot joint named-entity recognition and relation extraction to surface entities and relationships in large document collections, with the Organized Crime and Corruption Reporting Project (OCCRP).\n\n\n2024\nGreen-AI Hub: automated product carbon footprint estimation\nLLM-based entity linking to map manufactured components to environmental impact databases for SMEs (Green-AI Hub Mittelstand, BMUV). Published at the Ecology & Environment NLP workshop, 2025.\n\n\n2024–2025\nExplaining embedding similarity for retrieval\nAdapting attribution methods (ALTI, Integrated Gradients) to pairwise embedding similarity, and using token-level attributions to rerank retrieved documents for RAG.\n\n\n2025–present\nGenKI4Media: trustworthy generative AI for the media sector\nMethods for the transparency, traceability, and accuracy of AI-generated editorial content (BMFTR, with dpa and Deutsche Welle). Two strands: detecting unsupported RAG answers from model internals (extended abstract at BlackboxNLP 2026, full paper forthcoming), and DELTA, training-free character-length control for masked diffusion LMs (EMNLP 2026).\n\n\n2026\nXPO (Software Campus): explainability-guided prompt repair\nProject lead for a 12-month Software Campus project with Celonis on explainability-guided prompt optimization and repair for reliable agentic workflows.\n\n\n2026\nGUARDRAIL: reliability-aware knowledge graphs\nFranco-German AI for Science project on propagating source-reliability signals from KG construction through retrieval, claim verification, and abstention."
-  },
-  {
-    "objectID": "index.html#selected-work",
-    "href": "index.html#selected-work",
-    "title": "Steffen Castle",
-    "section": "Selected work",
-    "text": "Selected work\n\n\nEMNLP 2026\nTraining-free character-length control in summarization with masked diffusion LMs (DELTA).\nProject page →\n\n\nGUARDRAIL\nUncertainty-aware knowledge graphs and calibrated abstention for environmental claim verification. Franco-German AI for Science project.\nProject page →\n\n\nSoftware Campus\nExplainability-driven AI reliability with industry partner Celonis.\nResearch agenda →\n\n\nPublications\nWork on diffusion LMs, explainability, drift detection, and LLM-based entity linking.\nPublications →\n\n\nCollaboration\nOpen to collaborations on grounded language models, AI-for-science workflows, and mechanistic interpretability.\nGet in touch →"
-  },
-  {
     "objectID": "publications.html",
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "Training-Free Character-Length Control in Summarization with Diffusion Language ModelsSteffen Castle, Nils Feldhus, Christopher Ebert, Leonhard Hennig, Sebastian Möller.EMNLP 2026 (main conference).PDF\nEntity Linking using LLMs for Automated Product Carbon Footprint EstimationSteffen Castle, Julian Moreno Schneider, Leonhard Hennig, Georg Rehm.Proceedings of the 1st Workshop on Ecology, Environment, and Natural Language Processing. Tallinn, Estonia, 2025.PDF ACL Anthology\nInnovations and Emerging Trends in Applied Machine Intelligence: Selected Results of the Dagstuhl Workshop AMI'2025Bernhard G. Humm et al. incl. Steffen Castle.Forthcoming, 2026.\nDetecting Covariate Drift with ExplanationsSteffen Castle, Robert Schwarzenberg, Mohsen Pourvali.NLPCC Workshop on Explainable Artificial Intelligence, 2021.PDF DOI Code\nPattern-Guided Integrated GradientsRobert Schwarzenberg and Steffen Castle.ICML Workshop on Human Interpretability in Machine Learning, 2020.PDF arXiv\nFindings of the WMT 2024 Biomedical Translation Shared Task: Test Sets on Abstract LevelMariana Neves et al. incl. Steffen Castle.WMT 2024."
+    "text": "Training-Free Character-Length Control in Summarization with Diffusion Language ModelsSteffen Castle, Nils Feldhus, Christopher Ebert, Leonhard Hennig, Sebastian Möller.EMNLP 2026 (main conference).PDF\nEntity Linking using LLMs for Automated Product Carbon Footprint EstimationSteffen Castle, Julian Moreno Schneider, Leonhard Hennig, Georg Rehm.NLP4Ecology 2025 (1st Workshop on Ecology, Environment, and Natural Language Processing), Tallinn, Estonia.PDF ACL Anthology\nInnovations and Emerging Trends in Applied Machine Intelligence: Selected Results of the Dagstuhl Workshop AMI'2025Bernhard G. Humm et al. incl. Steffen Castle.Forthcoming, 2026.\nDetecting Covariate Drift with ExplanationsSteffen Castle, Robert Schwarzenberg, Mohsen Pourvali.NLPCC Workshop on Explainable Artificial Intelligence, 2021.PDF DOI Code\nPattern-Guided Integrated GradientsRobert Schwarzenberg and Steffen Castle.ICML Workshop on Human Interpretability in Machine Learning, 2020.PDF arXiv\nFindings of the WMT 2024 Biomedical Translation Shared Task: Test Sets on Abstract LevelMariana Neves et al. incl. Steffen Castle.WMT 2024."
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "My research is centered on explainable AI, mechanistic interpretability, uncertainty quantification, and language-model reliability."
+  },
+  {
+    "objectID": "research.html#research-agenda",
+    "href": "research.html#research-agenda",
+    "title": "Research",
+    "section": "Research agenda",
+    "text": "Research agenda\nI am interested in explanations as operational signals: not only as post-hoc descriptions for humans, but as measurable quantities that can improve AI systems.\nCurrent directions:\n\ndetecting contextual hallucinations in retrieval-augmented generation,\nusing model-internal features for evaluation and reliability,\ncontrollable generation with masked diffusion language models,\nexplanation-based covariate drift detection,\ninterpretable NLP systems for information extraction and document understanding,\nreliable AI workflows for science and industry."
+  },
+  {
+    "objectID": "research.html#phd-thesis",
+    "href": "research.html#phd-thesis",
+    "title": "Research",
+    "section": "PhD thesis",
+    "text": "PhD thesis\nBeyond Human Interaction: Alternative Applications for Explanations (TU Berlin / DFKI, since 2023)\nTraditional XAI produces explanations for humans to read. My thesis instead treats attribution methods (Integrated Gradients, ALTI, LRP, and mechanistic decompositions of the residual stream) as internal signals that an AI system can consume itself. It is organised around three questions:\n\nCan explanations detect when the input distribution changes? Attribution patterns shift before performance drops, enabling label-free drift detection.\nCan explanations improve retrieval in RAG systems? Token-level attribution for pairwise embedding similarity, and attribution-based reranking of retrieved documents.\nCan explanations verify factuality? Tracking which source tokens influence each generated token to detect contextual hallucinations and attach citations."
+  },
+  {
+    "objectID": "research.html#explainability-as-an-engineering-signal",
+    "href": "research.html#explainability-as-an-engineering-signal",
+    "title": "Research",
+    "section": "Explainability as an engineering signal",
+    "text": "Explainability as an engineering signal\nA recurring theme in my work is that explanations can be used to improve AI systems, not only to explain them after the fact. This includes model monitoring, drift detection, model evaluation, and mechanistic diagnostics."
+  },
+  {
+    "objectID": "research.html#software-campus",
+    "href": "research.html#software-campus",
+    "title": "Research",
+    "section": "Software Campus",
+    "text": "Software Campus\nSoftware Campus Fellow / Project Lead, XPO\nIndustry partner: Celonis\nI lead XPO, a 12-month project on explainability-guided prompt optimization and repair for reliable agentic workflows, with an emphasis on language-model reliability, grounding, and mechanistic diagnostics."
+  },
+  {
+    "objectID": "research.html#dfki-projects",
+    "href": "research.html#dfki-projects",
+    "title": "Research",
+    "section": "DFKI projects",
+    "text": "DFKI projects\n\nGenKI4Media (2025–present): transparency, traceability, and accuracy of AI-generated editorial content.\nData4Transparency (2023–2024): information extraction over large document collections for investigative journalists (OCCRP).\nGreen-AI Hub Mittelstand (2024): LLM entity linking for automated product carbon footprint estimation.\nPLASS (2020–2022): information extraction and drift detection for supply-chain risk monitoring.\n\nSee Projects for details."
+  },
+  {
+    "objectID": "research.html#collaboration-interests",
+    "href": "research.html#collaboration-interests",
+    "title": "Research",
+    "section": "Collaboration interests",
+    "text": "Collaboration interests\nI am especially interested in source-grounded AI-for-science settings where model outputs should be constrained by provided evidence:\n\nmathematical or scientific reasoning,\nengineering and technical documentation,\npolicy, legal, and financial reports,\nenterprise process and operational documents."
   },
   {
     "objectID": "cv.html",
@@ -140,52 +168,24 @@
     "text": "PLASS: explanation-based drift detection\nPlatform for Analytical Supply Chain Management Services (BMWi, 2020–2022, led by Siemens)\nPLASS built a B2B platform for AI-based supply-chain risk monitoring, extracting decision-relevant information from multilingual news. My work covered relation extraction and, in particular, how explanation signals can identify covariate drift in deployed models, using interpretability methods as practical model-monitoring tools rather than only as human-facing explanations (Detecting Covariate Drift with Explanations, NLPCC XAI workshop 2021). PDF · Code"
   },
   {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Steffen Castle",
     "section": "",
-    "text": "My research is centered on explainable AI, mechanistic interpretability, uncertainty quantification, and language-model reliability."
+    "text": "Researcher, DFKI Berlin · PhD Student, TU Berlin\n\n\nI study how language models use information internally, and how those internal signals can be turned into tools for detecting hallucinations in retrieval-augmented generation, monitoring drift, and controlling generation.\n\nResearch Projects Contact"
   },
   {
-    "objectID": "research.html#research-agenda",
-    "href": "research.html#research-agenda",
-    "title": "Research",
-    "section": "Research agenda",
-    "text": "Research agenda\nI am interested in explanations as operational signals: not only as post-hoc descriptions for humans, but as measurable quantities that can improve AI systems.\nCurrent directions:\n\ndetecting contextual hallucinations in retrieval-augmented generation,\nusing model-internal features for evaluation and reliability,\ncontrollable generation with masked diffusion language models,\nexplanation-based covariate drift detection,\ninterpretable NLP systems for information extraction and document understanding,\nreliable AI workflows for science and industry."
+    "objectID": "index.html#research-story",
+    "href": "index.html#research-story",
+    "title": "Steffen Castle",
+    "section": "Research story",
+    "text": "Research story\n\n\n2019–2020\nImproving neural network explanations\nMaster’s research at DFKI on Pattern-Guided Attribution and Pattern-Guided Integrated Gradients.\n\n\n2020–2022\nPLASS: information extraction for supply-chain risk\nRelation extraction and uncertainty quantification for monitoring supply-chain risks in multilingual news (BMWi, with Siemens). Produced Detecting Covariate Drift with Explanations (2021): explanation signals as operational tools for detecting covariate shift.\n\n\n2023\nPhD: machine-internal uses of explainability\nThesis topic Beyond Human Interaction: Alternative Applications for Explanations. Rather than producing explanations for people to read, the thesis asks whether attribution signals can serve AI systems directly: detecting distribution shift, improving retrieval, and verifying factuality.\n\n\n2023–2024\nData4Transparency: information extraction for investigative journalism\nFew-shot joint named-entity recognition and relation extraction to surface entities and relationships in large document collections, with the Organized Crime and Corruption Reporting Project (OCCRP).\n\n\n2024\nGreen-AI Hub: automated product carbon footprint estimation\nLLM-based entity linking to map manufactured components to environmental impact databases for SMEs (Green-AI Hub Mittelstand, BMUV). Published at NLP4Ecology 2025.\n\n\n2024–2025\nExplaining embedding similarity for retrieval\nAdapting attribution methods (ALTI, Integrated Gradients) to pairwise embedding similarity, and using token-level attributions to rerank retrieved documents for RAG.\n\n\n2025–present\nGenKI4Media: trustworthy generative AI for the media sector\nMethods for the transparency, traceability, and accuracy of AI-generated editorial content (BMFTR, with dpa and Deutsche Welle). Two strands: detecting unsupported RAG answers from model internals (extended abstract at BlackboxNLP 2026, full paper forthcoming), and DELTA, training-free character-length control for masked diffusion LMs (EMNLP 2026).\n\n\n2026\nXPO (Software Campus): explainability-guided prompt repair\nProject lead for a 12-month Software Campus project with Celonis on explainability-guided prompt optimization and repair for reliable agentic workflows.\n\n\n2026\nGUARDRAIL: reliability-aware knowledge graphs\nFranco-German AI for Science project on propagating source-reliability signals from KG construction through retrieval, claim verification, and abstention."
   },
   {
-    "objectID": "research.html#phd-thesis",
-    "href": "research.html#phd-thesis",
-    "title": "Research",
-    "section": "PhD thesis",
-    "text": "PhD thesis\nBeyond Human Interaction: Alternative Applications for Explanations (TU Berlin / DFKI, since 2023)\nTraditional XAI produces explanations for humans to read. My thesis instead treats attribution methods (Integrated Gradients, ALTI, LRP, and mechanistic decompositions of the residual stream) as internal signals that an AI system can consume itself. It is organised around three questions:\n\nCan explanations detect when the input distribution changes? Attribution patterns shift before performance drops, enabling label-free drift detection.\nCan explanations improve retrieval in RAG systems? Token-level attribution for pairwise embedding similarity, and attribution-based reranking of retrieved documents.\nCan explanations verify factuality? Tracking which source tokens influence each generated token to detect contextual hallucinations and attach citations."
-  },
-  {
-    "objectID": "research.html#explainability-as-an-engineering-signal",
-    "href": "research.html#explainability-as-an-engineering-signal",
-    "title": "Research",
-    "section": "Explainability as an engineering signal",
-    "text": "Explainability as an engineering signal\nA recurring theme in my work is that explanations can be used to improve AI systems, not only to explain them after the fact. This includes model monitoring, drift detection, model evaluation, and mechanistic diagnostics."
-  },
-  {
-    "objectID": "research.html#software-campus",
-    "href": "research.html#software-campus",
-    "title": "Research",
-    "section": "Software Campus",
-    "text": "Software Campus\nSoftware Campus Fellow / Project Lead, XPO\nIndustry partner: Celonis\nI lead XPO, a 12-month project on explainability-guided prompt optimization and repair for reliable agentic workflows, with an emphasis on language-model reliability, grounding, and mechanistic diagnostics."
-  },
-  {
-    "objectID": "research.html#dfki-projects",
-    "href": "research.html#dfki-projects",
-    "title": "Research",
-    "section": "DFKI projects",
-    "text": "DFKI projects\n\nGenKI4Media (2025–present): transparency, traceability, and accuracy of AI-generated editorial content.\nData4Transparency (2023–2024): information extraction over large document collections for investigative journalists (OCCRP).\nGreen-AI Hub Mittelstand (2024): LLM entity linking for automated product carbon footprint estimation.\nPLASS (2020–2022): information extraction and drift detection for supply-chain risk monitoring.\n\nSee Projects for details."
-  },
-  {
-    "objectID": "research.html#collaboration-interests",
-    "href": "research.html#collaboration-interests",
-    "title": "Research",
-    "section": "Collaboration interests",
-    "text": "Collaboration interests\nI am especially interested in source-grounded AI-for-science settings where model outputs should be constrained by provided evidence:\n\nmathematical or scientific reasoning,\nengineering and technical documentation,\npolicy, legal, and financial reports,\nenterprise process and operational documents."
+    "objectID": "index.html#selected-work",
+    "href": "index.html#selected-work",
+    "title": "Steffen Castle",
+    "section": "Selected work",
+    "text": "Selected work\n\n\nEMNLP 2026\nTraining-free character-length control in summarization with masked diffusion LMs (DELTA).\nProject page →\n\n\nGUARDRAIL\nUncertainty-aware knowledge graphs and calibrated abstention for environmental claim verification. Franco-German AI for Science project.\nProject page →\n\n\nSoftware Campus\nExplainability-driven AI reliability with industry partner Celonis.\nResearch agenda →\n\n\nPublications\nWork on diffusion LMs, explainability, drift detection, and LLM-based entity linking.\nPublications →\n\n\nCollaboration\nOpen to collaborations on grounded language models, AI-for-science workflows, and mechanistic interpretability.\nGet in touch →"
   }
 ]
