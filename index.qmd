@@ -1,17 +1,14 @@
 ---
-title: "Steffen Castle"
-subtitle: "Researcher in Explainable AI, Mechanistic Interpretability, and Reliable Language Models"
+pagetitle: "Steffen Castle"
 ---
 
 ::: {.hero}
 ::: {.hero-text}
-# Steffen Castle
-
 ## Researcher, DFKI Berlin · PhD Student, TU Berlin
 
-**Explainable AI · Mechanistic Interpretability · Reliable Language Models**
+# Steffen *Castle*
 
-I study how language models use information internally, and how those internal signals can be used to detect failures such as contextual hallucinations in retrieval-augmented generation.
+I study how language models use information internally — and how those internal signals can be turned into tools: detecting hallucinations in retrieval-augmented generation, monitoring drift, and controlling generation.
 
 ::: {.hero-buttons}
 [Research](research.qmd){.btn .btn-primary}
@@ -51,61 +48,70 @@ German delegation, AI for Science Summer School Paris 2026
 
 ::: {.timeline}
 ::: {.timeline-item}
-**2019–2020**  
+[2019–2020]{.timeline-year}
+
 **Improving neural network explanations**  
 Master's research at DFKI on Pattern-Guided Attribution and Pattern-Guided Integrated Gradients.
 :::
 
 ::: {.timeline-item}
-**2020–2022**  
+[2020–2022]{.timeline-year}
+
 **PLASS — information extraction for supply-chain risk**  
 Relation extraction and uncertainty quantification for monitoring supply-chain risks in multilingual news (BMWi, with Siemens). Produced *Detecting Covariate Drift with Explanations* (2021): explanation signals as operational tools for detecting covariate shift.
 :::
 
 ::: {.timeline-item}
-**2023**  
+[2023]{.timeline-year}
+
 **PhD: machine-internal uses of explainability**  
 Thesis topic *Beyond Human Interaction: Alternative Applications for Explanations*. Rather than producing explanations for people to read, the thesis asks whether attribution signals can serve AI systems directly: detecting distribution shift, improving retrieval, and verifying factuality.
 :::
 
 ::: {.timeline-item}
-**2023–2024**  
+[2023–2024]{.timeline-year}
+
 **Data4Transparency — search over leaked documents for investigative journalists**  
 Few-shot joint named-entity recognition and relation extraction to surface entities and relationships in large document dumps, with the Organized Crime and Corruption Reporting Project (OCCRP).
 :::
 
 ::: {.timeline-item}
-**2024**  
+[2024]{.timeline-year}
+
 **Green-AI Hub — automated product carbon footprint estimation**  
 LLM-based entity linking to map manufactured components to environmental impact databases for SMEs (Green-AI Hub Mittelstand, BMUV). Published at the Ecology & Environment NLP workshop, 2025.
 :::
 
 ::: {.timeline-item}
-**2024–2025**  
+[2024–2025]{.timeline-year}
+
 **Explaining embedding similarity for retrieval**  
 Adapting attribution methods (ALTI, Integrated Gradients) to pairwise embedding similarity, and using token-level attributions to rerank retrieved documents for RAG.
 :::
 
 ::: {.timeline-item}
-**2025–present**  
+[2025–present]{.timeline-year}
+
 **GenKI4Media — trustworthy generative AI for the media sector**  
 Methods for the transparency, traceability, and accuracy of AI-generated editorial content (BMFTR, with dpa and Deutsche Welle). Two strands: detecting unsupported RAG answers from model internals (extended abstract at BlackboxNLP 2026, full paper forthcoming), and DELTA, training-free character-length control for masked diffusion LMs (EMNLP 2026).
 :::
 
 ::: {.timeline-item}
-**2026**  
+[2026]{.timeline-year}
+
 **XPO (Software Campus) — explainability-guided prompt repair**  
 Project lead for a 12-month Software Campus project with Celonis on explainability-guided prompt optimization and repair for reliable agentic workflows.
 :::
 
 ::: {.timeline-item}
-**2026**  
+[2026]{.timeline-year}
+
 **GUARDRAIL — reliability-aware knowledge graphs**  
 Franco-German AI for Science project on propagating source-reliability signals from KG construction through retrieval, claim verification, and abstention.
 :::
 :::
 
-## Highlights
+## Selected work
 
 ::: {.cards}
 ::: {.card}
@@ -131,7 +137,7 @@ Explainability-driven AI reliability with industry partner **Celonis**.
 
 ::: {.card}
 ### Publications
-Work on diffusion LMs, explainability, drift detection, biomedical NLP, and LLM-based entity linking.
+Work on diffusion LMs, explainability, drift detection, and LLM-based entity linking.
 
 [Publications →](publications.qmd)
 :::

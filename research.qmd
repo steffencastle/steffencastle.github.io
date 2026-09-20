@@ -51,7 +51,6 @@ See [Projects](projects.qmd) for details.
 
 I am especially interested in source-grounded AI-for-science settings where model outputs should be constrained by provided evidence:
 
-- biomedical and clinical QA,
 - mathematical or scientific reasoning,
 - engineering and technical documentation,
 - policy, legal, and financial reports,
