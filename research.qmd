@@ -33,17 +33,17 @@ A recurring theme in my work is that explanations can be used to **improve** AI 
 
 ## Software Campus
 
-**Software Campus Fellow / Project Lead — XPO**  
+**Software Campus Fellow / Project Lead, XPO**  
 Industry partner: **Celonis**
 
 I lead XPO, a 12-month project on explainability-guided prompt optimization and repair for reliable agentic workflows, with an emphasis on language-model reliability, grounding, and mechanistic diagnostics.
 
 ## DFKI projects
 
-- **GenKI4Media** (2025–present) — transparency, traceability, and accuracy of AI-generated editorial content.
-- **Data4Transparency** (2023–2024) — information extraction over leaked document collections for investigative journalists (OCCRP).
-- **Green-AI Hub Mittelstand** (2024) — LLM entity linking for automated product carbon footprint estimation.
-- **PLASS** (2020–2022) — information extraction and drift detection for supply-chain risk monitoring.
+- **GenKI4Media** (2025–present): transparency, traceability, and accuracy of AI-generated editorial content.
+- **Data4Transparency** (2023–2024): information extraction over leaked document collections for investigative journalists (OCCRP).
+- **Green-AI Hub Mittelstand** (2024): LLM entity linking for automated product carbon footprint estimation.
+- **PLASS** (2020–2022): information extraction and drift detection for supply-chain risk monitoring.
 
 See [Projects](projects.qmd) for details.
 

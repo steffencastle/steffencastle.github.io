@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f2ea7e77294d9af444a9035c986dd1a9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4dcbbc037826e7d4fc80e0ac010d0f2d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -168,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="delta" class="level2">
 <h2 class="anchored" data-anchor-id="delta">Character-length control with diffusion language models</h2>
-<p><strong>Training-Free Character-Length Control in Summarization with Diffusion Language Models</strong> — EMNLP 2026 (main conference)</p>
+<p><strong>Training-Free Character-Length Control in Summarization with Diffusion Language Models</strong>, EMNLP 2026 (main conference)</p>
 <p>This work grew out of <a href="#genki4media">GenKI4Media</a>, where editorial partners such as dpa and Deutsche Welle need generated text to fit predefined display slots. Summarization with a fixed character length matters for headlines, article previews, notifications, subtitles, and UI text, where even a few extra characters cause truncation or layout overflow. Autoregressive models struggle with precise character-length control: training-based methods need task-specific fine-tuning, and zero-shot prompting only achieves approximate compliance.</p>
 <p><strong>DELTA</strong> (Diffusion Expected Length Targeting Algorithm) is a training-free, inference-time method for masked diffusion LMs. At each denoising step it estimates the expected character length of the output and dynamically inserts or removes masked positions to steer toward the target length. It requires no fine-tuning and works with off-the-shelf masked diffusion LMs (e.g.&nbsp;LLaDA, Dream).</p>
 <p>Across three summarization benchmarks, DELTA reduces character-length errors by an order of magnitude compared to baselines while maintaining competitive summary quality in both automatic and human evaluation.</p>
@@ -194,9 +194,9 @@ ul.task-list li input[type="checkbox"] {
 <p>Knowledge graphs enable symbolic fact-checking of LLMs, but current approaches assume the graph itself is reliable. When LLMs are used to build the graph, converting probabilistic outputs into discrete triples strips away the signal of how well each fact is supported by its source, so a KG can end up validating hallucinated claims instead of preventing them.</p>
 <p>GUARDRAIL studies the end-to-end propagation of reliability signals in KG-grounded LLM reasoning for environmental data:</p>
 <ol type="1">
-<li><strong>Uncertainty-aware KG construction</strong> — retain source-groundedness (from interpretability-based source attribution) and citation-network quality signals alongside each extracted triple.</li>
-<li><strong>Reliability-aware retrieval and claim verification</strong> — adapt graph-based retrieval and KG-grounded verification to use these signals, evaluated on climate-related claim verification (ClimateCheck).</li>
-<li><strong>Calibrated abstention</strong> — combine graph reliability, retrieval coverage, and model confidence into an answer-or-defer policy, with a secondary transfer to plant- and pest-related QA.</li>
+<li><strong>Uncertainty-aware KG construction</strong>: retain source-groundedness (from interpretability-based source attribution) and citation-network quality signals alongside each extracted triple.</li>
+<li><strong>Reliability-aware retrieval and claim verification</strong>: adapt graph-based retrieval and KG-grounded verification to use these signals, evaluated on climate-related claim verification (ClimateCheck).</li>
+<li><strong>Calibrated abstention</strong>: combine graph reliability, retrieval coverage, and model confidence into an answer-or-defer policy, with a secondary transfer to plant- and pest-related QA.</li>
 </ol>
 </section>
 <section id="genki4media" class="level2">
@@ -205,7 +205,7 @@ ul.task-list li input[type="checkbox"] {
 <p>A consortium project with 3pc, ART+COM, Fraunhofer FOKUS, dpa, and Deutsche Welle building generative AI assistants for editorial work. DFKI’s sub-project develops methods to improve the transparency, traceability, and trustworthiness of AI-generated content: relating generated text to external sources, validating it against them, and correcting it where necessary. My work in the project covers hallucination detection from model internals and length-controlled summarization with diffusion LMs (see above).</p>
 </section>
 <section id="xpo" class="level2">
-<h2 class="anchored" data-anchor-id="xpo">XPO — Software Campus</h2>
+<h2 class="anchored" data-anchor-id="xpo">XPO (Software Campus)</h2>
 <p><strong>Explainability-guided prompt optimization and repair</strong> (Software Campus, industry partner Celonis, 2026)</p>
 <p>Project lead for a 12-month research project on using explainability signals to diagnose and repair prompts in agentic LLM workflows, with the goal of making such workflows more reliable in enterprise process settings.</p>
 </section>
@@ -215,14 +215,14 @@ ul.task-list li input[type="checkbox"] {
 <p>Investigative journalists working with the Organized Crime and Corruption Reporting Project receive large leaked document collections with little labelled data. This project developed enhanced search over such document dumps using few-shot joint named-entity recognition and relation extraction, so that entities and their connections can be surfaced at scale.</p>
 </section>
 <section id="green-ai-hub" class="level2">
-<h2 class="anchored" data-anchor-id="green-ai-hub">Green-AI Hub — entity linking for product carbon footprint estimation</h2>
+<h2 class="anchored" data-anchor-id="green-ai-hub">Green-AI Hub: entity linking for product carbon footprint estimation</h2>
 <p><strong>Green-AI Hub Mittelstand</strong> (BMUV, 2024)</p>
 <p>A pilot project with a manufacturing SME applying LLM-based semantic similarity and entity linking to map manufactured components to environmental impact databases, automating the computation of product carbon footprints. Published as <em>Entity Linking using LLMs for Automated Product Carbon Footprint Estimation</em> (2025). <a href="assets/papers/castle2025ecolink.pdf">PDF</a></p>
 </section>
 <section id="plass" class="level2">
-<h2 class="anchored" data-anchor-id="plass">PLASS — explanation-based drift detection</h2>
+<h2 class="anchored" data-anchor-id="plass">PLASS: explanation-based drift detection</h2>
 <p><strong>Platform for Analytical Supply Chain Management Services</strong> (BMWi, 2020–2022, led by Siemens)</p>
-<p>PLASS built a B2B platform for AI-based supply-chain risk monitoring, extracting decision-relevant information from multilingual news. My work covered relation extraction and, in particular, how explanation signals can identify covariate drift in deployed models — using interpretability methods as practical model-monitoring tools rather than only as human-facing explanations (<em>Detecting Covariate Drift with Explanations</em>, NLPCC XAI workshop 2021). <a href="https://www.dfki.de/fileadmin/user_upload/import/11753_Detecting_Covariate_Drift_with_Explanations.pdf">PDF</a> · <a href="https://github.com/DFKI-NLP/xai-shift-detection">Code</a></p>
+<p>PLASS built a B2B platform for AI-based supply-chain risk monitoring, extracting decision-relevant information from multilingual news. My work covered relation extraction and, in particular, how explanation signals can identify covariate drift in deployed models, using interpretability methods as practical model-monitoring tools rather than only as human-facing explanations (<em>Detecting Covariate Drift with Explanations</em>, NLPCC XAI workshop 2021). <a href="https://www.dfki.de/fileadmin/user_upload/import/11753_Detecting_Covariate_Drift_with_Explanations.pdf">PDF</a> · <a href="https://github.com/DFKI-NLP/xai-shift-detection">Code</a></p>
 
 
 </section>

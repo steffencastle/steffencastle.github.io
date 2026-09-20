@@ -4,7 +4,7 @@ title: "Projects"
 
 ## Character-length control with diffusion language models {#delta}
 
-**Training-Free Character-Length Control in Summarization with Diffusion Language Models** — EMNLP 2026 (main conference)
+**Training-Free Character-Length Control in Summarization with Diffusion Language Models**, EMNLP 2026 (main conference)
 
 This work grew out of [GenKI4Media](#genki4media), where editorial partners such as dpa and Deutsche Welle need generated text to fit predefined display slots. Summarization with a fixed character length matters for headlines, article previews, notifications, subtitles, and UI text, where even a few extra characters cause truncation or layout overflow. Autoregressive models struggle with precise character-length control: training-based methods need task-specific fine-tuning, and zero-shot prompting only achieves approximate compliance.
 
@@ -38,9 +38,9 @@ Knowledge graphs enable symbolic fact-checking of LLMs, but current approaches a
 
 GUARDRAIL studies the end-to-end propagation of reliability signals in KG-grounded LLM reasoning for environmental data:
 
-1. **Uncertainty-aware KG construction** — retain source-groundedness (from interpretability-based source attribution) and citation-network quality signals alongside each extracted triple.
-2. **Reliability-aware retrieval and claim verification** — adapt graph-based retrieval and KG-grounded verification to use these signals, evaluated on climate-related claim verification (ClimateCheck).
-3. **Calibrated abstention** — combine graph reliability, retrieval coverage, and model confidence into an answer-or-defer policy, with a secondary transfer to plant- and pest-related QA.
+1. **Uncertainty-aware KG construction**: retain source-groundedness (from interpretability-based source attribution) and citation-network quality signals alongside each extracted triple.
+2. **Reliability-aware retrieval and claim verification**: adapt graph-based retrieval and KG-grounded verification to use these signals, evaluated on climate-related claim verification (ClimateCheck).
+3. **Calibrated abstention**: combine graph reliability, retrieval coverage, and model confidence into an answer-or-defer policy, with a secondary transfer to plant- and pest-related QA.
 
 ## GenKI4Media {#genki4media}
 
@@ -48,7 +48,7 @@ GUARDRAIL studies the end-to-end propagation of reliability signals in KG-ground
 
 A consortium project with 3pc, ART+COM, Fraunhofer FOKUS, dpa, and Deutsche Welle building generative AI assistants for editorial work. DFKI's sub-project develops methods to improve the transparency, traceability, and trustworthiness of AI-generated content: relating generated text to external sources, validating it against them, and correcting it where necessary. My work in the project covers hallucination detection from model internals and length-controlled summarization with diffusion LMs (see above).
 
-## XPO — Software Campus {#xpo}
+## XPO (Software Campus) {#xpo}
 
 **Explainability-guided prompt optimization and repair** (Software Campus, industry partner Celonis, 2026)
 
@@ -60,14 +60,14 @@ Project lead for a 12-month research project on using explainability signals to 
 
 Investigative journalists working with the Organized Crime and Corruption Reporting Project receive large leaked document collections with little labelled data. This project developed enhanced search over such document dumps using few-shot joint named-entity recognition and relation extraction, so that entities and their connections can be surfaced at scale.
 
-## Green-AI Hub — entity linking for product carbon footprint estimation {#green-ai-hub}
+## Green-AI Hub: entity linking for product carbon footprint estimation {#green-ai-hub}
 
 **Green-AI Hub Mittelstand** (BMUV, 2024)
 
 A pilot project with a manufacturing SME applying LLM-based semantic similarity and entity linking to map manufactured components to environmental impact databases, automating the computation of product carbon footprints. Published as *Entity Linking using LLMs for Automated Product Carbon Footprint Estimation* (2025). [PDF](assets/papers/castle2025ecolink.pdf)
 
-## PLASS — explanation-based drift detection {#plass}
+## PLASS: explanation-based drift detection {#plass}
 
 **Platform for Analytical Supply Chain Management Services** (BMWi, 2020–2022, led by Siemens)
 
-PLASS built a B2B platform for AI-based supply-chain risk monitoring, extracting decision-relevant information from multilingual news. My work covered relation extraction and, in particular, how explanation signals can identify covariate drift in deployed models — using interpretability methods as practical model-monitoring tools rather than only as human-facing explanations (*Detecting Covariate Drift with Explanations*, NLPCC XAI workshop 2021). [PDF](https://www.dfki.de/fileadmin/user_upload/import/11753_Detecting_Covariate_Drift_with_Explanations.pdf) · [Code](https://github.com/DFKI-NLP/xai-shift-detection)
+PLASS built a B2B platform for AI-based supply-chain risk monitoring, extracting decision-relevant information from multilingual news. My work covered relation extraction and, in particular, how explanation signals can identify covariate drift in deployed models, using interpretability methods as practical model-monitoring tools rather than only as human-facing explanations (*Detecting Covariate Drift with Explanations*, NLPCC XAI workshop 2021). [PDF](https://www.dfki.de/fileadmin/user_upload/import/11753_Detecting_Covariate_Drift_with_Explanations.pdf) · [Code](https://github.com/DFKI-NLP/xai-shift-detection)
