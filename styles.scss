@@ -1,21 +1,21 @@
 /*-- scss:defaults --*/
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Schibsted+Grotesk:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap');
 
-$bg: #fbfbf9;
+$bg: #faf9f6;
 $surface: #ffffff;
-$ink: #17181a;
-$ink-soft: #5b5f66;
-$rule: #e4e5e3;
-$rule-strong: #c7c9c5;
-$accent: #0f766e;
-$accent-soft: #e3f1ee;
-$heading-font: "Schibsted Grotesk", "Inter", sans-serif;
+$ink: #1c2430;
+$ink-soft: #5d6674;
+$rule: #e2e4e6;
+$rule-strong: #c5c9ce;
+$accent: #7b2d3e;
+$accent-soft: #f3e8ea;
+$heading-font: "IBM Plex Serif", Georgia, serif;
 
 $body-bg: $bg;
 $body-color: $ink;
 $link-color: $accent;
 $primary: $accent;
-$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+$font-family-sans-serif: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 $font-size-root: 16px;
 $navbar-bg: $bg;
 $navbar-fg: $ink;
@@ -23,15 +23,14 @@ $navbar-hl: $accent;
 
 /*-- scss:rules --*/
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  font-feature-settings: "cv11", "ss01";
 }
 
 h1, h2, h3, h4 {
   font-family: $heading-font;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: -0.01em;
   color: $ink;
 }
@@ -55,8 +54,7 @@ a:hover { text-decoration: underline; text-underline-offset: 0.15em; }
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
 }
-.navbar .navbar-brand { font-family: $heading-font; font-weight: 700; font-size: 1rem; color: $ink; }
-.navbar .navbar-brand::after { content: ""; display: inline-block; width: 0.4em; height: 0.4em; border-radius: 50%; background: $accent; margin-left: 0.25em; vertical-align: baseline; }
+.navbar .navbar-brand { font-family: $heading-font; font-weight: 600; font-size: 1.05rem; color: $ink; }
 .navbar .nav-link { font-size: 0.88rem; font-weight: 500; color: $ink-soft !important; }
 .navbar .nav-link:hover, .navbar .nav-link.active { color: $accent !important; }
 .navbar .bi { color: $ink-soft; }
@@ -72,16 +70,13 @@ a:hover { text-decoration: underline; text-underline-offset: 0.15em; }
 
 #title-block-header { margin: 3rem 0 0.5rem; }
 #title-block-header .title {
-  font-size: 2.6rem;
-  font-weight: 800;
-  letter-spacing: -0.025em;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
   margin: 0;
   padding-bottom: 1rem;
   border-bottom: 1px solid $rule;
   position: relative;
-}
-#title-block-header .title::after {
-  content: ""; position: absolute; left: 0; bottom: -1px; width: 3rem; height: 3px; background: $accent; border-radius: 2px;
 }
 .quarto-title-meta { display: none; }
 
@@ -92,9 +87,6 @@ section.level2 > h2, main.content > h2 {
   padding-bottom: 0.6rem;
   position: relative;
   border-bottom: 1px solid $rule;
-}
-section.level2 > h2::after, main.content > h2::after {
-  content: ""; position: absolute; left: 0; bottom: -1px; width: 2.5rem; height: 3px; background: $accent; border-radius: 2px;
 }
 section.level2 > h3, main.content > h3 {
   font-size: 1.05rem;
@@ -123,12 +115,9 @@ main.content > p:first-child { margin-top: 2.5rem; }
 .hero h1 {
   font-size: clamp(2.8rem, 6.5vw, 4.4rem);
   line-height: 1.02;
-  font-weight: 800;
-  letter-spacing: -0.03em;
+  font-weight: 600;
+  letter-spacing: -0.02em;
   margin: 0 0 1.25rem;
-  display: inline-block;
-  background: linear-gradient(transparent 78%, $accent-soft 78%, $accent-soft 94%, transparent 94%);
-  padding: 0 0.1em 0 0;
 }
 .hero h1 em { font-style: normal; color: $accent; }
 .hero p {
@@ -138,33 +127,22 @@ main.content > p:first-child { margin-top: 2.5rem; }
   max-width: 36em;
   margin-bottom: 1rem;
 }
-.hero-photo { position: relative; }
 .hero-photo img {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 10px;
-  position: relative;
-  z-index: 1;
+  border-radius: 3px;
 }
-.hero-photo::before {
-  content: ""; position: absolute; inset: 0; border-radius: 10px;
-  background: $accent-soft; transform: translate(10px, 10px);
-}
-.hero-buttons { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.5rem; }
+.hero-buttons { display: flex; flex-wrap: wrap; gap: 1.75rem; margin-top: 1.5rem; }
 .btn, .btn-primary, .btn-secondary {
   all: unset;
   cursor: pointer;
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   font-weight: 500;
-  padding: 0.5rem 0.95rem;
-  border-radius: 6px;
-  border: 1px solid $rule-strong;
-  color: $ink !important;
+  color: $accent !important;
 }
-.btn:hover { border-color: $accent; color: $accent !important; text-decoration: none; }
-.btn-primary { background: $accent; border-color: $accent; color: #fff !important; }
-.btn-primary:hover { background: darken($accent, 6%); color: #fff !important; }
+.btn::after { content: " \2192"; }
+.btn:hover { text-decoration: underline; text-underline-offset: 0.2em; }
 
 /* ---------- affiliations ---------- */
 .affiliations {
@@ -185,38 +163,31 @@ main.content > p:first-child { margin-top: 2.5rem; }
 }
 
 /* ---------- timeline ---------- */
-.timeline { margin: 0 0 4rem; position: relative; }
+.timeline { margin: 0 0 4rem; }
 .timeline-item {
   display: grid;
-  grid-template-columns: 7.5rem 1fr;
+  grid-template-columns: 8rem 1fr;
   gap: 1.5rem;
-  padding: 0 0 1.75rem 1.6rem;
-  position: relative;
-  border-left: 2px solid $rule;
+  padding: 1rem 0;
+  border-bottom: 1px solid $rule;
 }
-.timeline-item::before {
-  content: ""; position: absolute; left: -7px; top: 0.35rem;
-  width: 12px; height: 12px; border-radius: 50%;
-  background: $bg; border: 2px solid $accent;
-}
-.timeline-item:last-child { padding-bottom: 0.5rem; }
+.timeline-item:last-child { border-bottom: 0; }
 .timeline-item p { margin: 0; }
 .timeline-year {
   display: block;
-  font-family: $heading-font;
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 500;
   color: $accent;
   font-variant-numeric: tabular-nums;
-  padding-top: 0.1rem;
+  padding-top: 0.2rem;
 }
 .timeline-item p:last-child { font-size: 0.95rem; color: $ink-soft; max-width: 64ch; }
 .timeline-item p:last-child strong {
   display: block;
   font-family: $heading-font;
   color: $ink;
-  font-weight: 700;
-  font-size: 1.05rem;
+  font-weight: 600;
+  font-size: 1.1rem;
   margin-bottom: 0.2rem;
 }
 .timeline-item p:last-child strong + br { display: none; }
@@ -230,11 +201,10 @@ main.content > p:first-child { margin-top: 2.5rem; }
 }
 .card {
   border: 1px solid $rule;
-  border-radius: 10px;
+  border-radius: 3px;
   background: $surface;
   box-shadow: none;
   padding: 1.25rem 1.35rem;
-  border-top: 3px solid $accent;
 }
 .card h3 { font-size: 1.1rem; margin: 0 0 0.4rem; }
 .card p { color: $ink-soft; font-size: 0.95rem; margin-bottom: 0.5rem; }
@@ -270,12 +240,12 @@ ol.pubs > li::before {
 .pub-links a {
   font-size: 0.78rem;
   font-weight: 500;
-  padding: 0.15rem 0.55rem;
-  border-radius: 4px;
-  background: $accent-soft;
-  color: $accent;
+  padding: 0.1rem 0.5rem;
+  border-radius: 2px;
+  border: 1px solid $rule-strong;
+  color: $ink;
 }
-.pub-links a:hover { text-decoration: none; background: darken($accent-soft, 5%); }
+.pub-links a:hover { text-decoration: none; border-color: $accent; color: $accent; }
 
 /* ---------- footer ---------- */
 .nav-footer {
@@ -294,5 +264,5 @@ ol.pubs > li::before {
 }
 @media (max-width: 600px) {
   .affiliations { grid-template-columns: 1fr; }
-  .timeline-item { grid-template-columns: 1fr; gap: 0.25rem; padding-left: 1.2rem; }
+  .timeline-item { grid-template-columns: 1fr; gap: 0.25rem; }
 }
