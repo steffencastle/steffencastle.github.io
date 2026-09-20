@@ -71,8 +71,8 @@ Thesis topic *Beyond Human Interaction: Alternative Applications for Explanation
 ::: {.timeline-item}
 [2023–2024]{.timeline-year}
 
-**Data4Transparency: search over leaked documents for investigative journalists**  
-Few-shot joint named-entity recognition and relation extraction to surface entities and relationships in large document dumps, with the Organized Crime and Corruption Reporting Project (OCCRP).
+**Data4Transparency: information extraction for investigative journalism**  
+Few-shot joint named-entity recognition and relation extraction to surface entities and relationships in large document collections, with the Organized Crime and Corruption Reporting Project (OCCRP).
 :::
 
 ::: {.timeline-item}

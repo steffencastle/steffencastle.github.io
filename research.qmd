@@ -41,7 +41,7 @@ I lead XPO, a 12-month project on explainability-guided prompt optimization and 
 ## DFKI projects
 
 - **GenKI4Media** (2025–present): transparency, traceability, and accuracy of AI-generated editorial content.
-- **Data4Transparency** (2023–2024): information extraction over leaked document collections for investigative journalists (OCCRP).
+- **Data4Transparency** (2023–2024): information extraction over large document collections for investigative journalists (OCCRP).
 - **Green-AI Hub Mittelstand** (2024): LLM entity linking for automated product carbon footprint estimation.
 - **PLASS** (2020–2022): information extraction and drift detection for supply-chain risk monitoring.
 

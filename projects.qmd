@@ -58,7 +58,7 @@ Project lead for a 12-month research project on using explainability signals to 
 
 **Information extraction for investigative journalism** (2023–2024, with OCCRP)
 
-Investigative journalists working with the Organized Crime and Corruption Reporting Project receive large leaked document collections with little labelled data. This project developed enhanced search over such document dumps using few-shot joint named-entity recognition and relation extraction, so that entities and their connections can be surfaced at scale.
+Investigative journalists working with the Organized Crime and Corruption Reporting Project analyse large document collections with little labelled data. This project developed enhanced search over such collections using few-shot joint named-entity recognition and relation extraction, so that entities and their connections can be surfaced at scale.
 
 ## Green-AI Hub: entity linking for product carbon footprint estimation {#green-ai-hub}
 
