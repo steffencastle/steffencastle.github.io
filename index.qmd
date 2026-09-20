@@ -4,7 +4,7 @@ pagetitle: "Steffen Castle"
 
 ::: {.hero}
 ::: {.hero-text}
-## Researcher, DFKI Berlin · PhD Student, TU Berlin
+[Researcher, DFKI Berlin · PhD Student, TU Berlin]{.eyebrow}
 
 # Steffen Castle
 
