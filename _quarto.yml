@@ -1,11 +1,13 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - assets/papers/
 
 website:
   title: "Steffen Castle"
   site-url: "https://steffencastle.github.io"
-  description: "Steffen Castle — researcher in explainable AI, mechanistic interpretability, and reliable language models."
+  description: "Steffen Castle: researcher in explainable AI, mechanistic interpretability, and reliable language models."
   page-footer:
     left: "Steffen Castle · DFKI Berlin · TU Berlin"
     right: "Built with Quarto"

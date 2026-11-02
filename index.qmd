@@ -57,6 +57,13 @@ Franco-German AI for Science project on propagating source-reliability signals f
 ::: {.timeline-item}
 [2026]{.timeline-year}
 
+**NEXUS: ontology-grounded reranking for scientific search**  
+Franco-German AI for Science project on neuro-symbolic retrieval: grounding documents and queries in aligned domain ontologies and reranking by late interaction between concepts, so that a ranking and its explanation rest on the same evidence.
+:::
+
+::: {.timeline-item}
+[2026]{.timeline-year}
+
 **XPO (Software Campus): explainability-guided prompt repair**  
 Project lead for a 12-month Software Campus project with Celonis on explainability-guided prompt optimization and repair for reliable agentic workflows.
 :::

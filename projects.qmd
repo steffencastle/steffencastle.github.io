@@ -42,6 +42,18 @@ GUARDRAIL studies the end-to-end propagation of reliability signals in KG-ground
 2. **Reliability-aware retrieval and claim verification**: adapt graph-based retrieval and KG-grounded verification to use these signals, evaluated on climate-related claim verification (ClimateCheck).
 3. **Calibrated abstention**: combine graph reliability, retrieval coverage, and model confidence into an answer-or-defer policy, with a secondary transfer to plant- and pest-related QA.
 
+## NEXUS {#nexus}
+
+**Knowledge-Driven and Interpretable Reranking for Scientific Document Retrieval** (Neuro-symbolic EXplainable Scientific Search)
+
+A second Franco-German project proposal from the AI For Science 2026 Summer School (AI Grid · DataIA · SCAI), developed alongside [GUARDRAIL](#guardrail). Partners: DFKI Berlin, TIB Hannover (Leibniz Information Center for Science and Technology), Friedrich Schiller University Jena, and Université de Technologie de Compiègne (BMBI Laboratory).
+
+Dense retrieval compresses documents into opaque vectors. It matches well, but it offers no account of which scientific concepts or relations made a query and a document similar, which limits both interpretability and the use of domain knowledge that is already written down. NEXUS asks whether structured knowledge held in existing ontologies can serve as the matching space itself rather than as auxiliary metadata or a post-hoc explanation layer.
+
+The pipeline links documents and queries to ontology concepts, aligns concepts across ontologies that describe the same domain from complementary perspectives (mappings proposed by an LLM, validated by a domain expert), and then performs late-interaction reranking directly between the resulting concept embeddings on a biomedical literature testbed. Because late interaction keeps individual concept matches intact, the evidence that drives a ranking is the same evidence that explains it.
+
+My role covers the ontology-grounded concept representations, the late-interaction reranker, and the concept-level explanations, including the technical evaluation of whether those explanations are faithful to the matches that actually moved the ranking.
+
 ## GenKI4Media {#genki4media}
 
 **Generative AI assistants for the media, cultural and creative sectors** (BMFTR, 2025–present)

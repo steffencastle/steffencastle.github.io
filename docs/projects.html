@@ -199,6 +199,14 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Calibrated abstention</strong>: combine graph reliability, retrieval coverage, and model confidence into an answer-or-defer policy, with a secondary transfer to plant- and pest-related QA.</li>
 </ol>
 </section>
+<section id="nexus" class="level2">
+<h2 class="anchored" data-anchor-id="nexus">NEXUS</h2>
+<p><strong>Knowledge-Driven and Interpretable Reranking for Scientific Document Retrieval</strong> (Neuro-symbolic EXplainable Scientific Search)</p>
+<p>A second Franco-German project proposal from the AI For Science 2026 Summer School (AI Grid · DataIA · SCAI), developed alongside <a href="#guardrail">GUARDRAIL</a>. Partners: DFKI Berlin, TIB Hannover (Leibniz Information Center for Science and Technology), Friedrich Schiller University Jena, and Université de Technologie de Compiègne (BMBI Laboratory).</p>
+<p>Dense retrieval compresses documents into opaque vectors. It matches well, but it offers no account of which scientific concepts or relations made a query and a document similar, which limits both interpretability and the use of domain knowledge that is already written down. NEXUS asks whether structured knowledge held in existing ontologies can serve as the matching space itself rather than as auxiliary metadata or a post-hoc explanation layer.</p>
+<p>The pipeline links documents and queries to ontology concepts, aligns concepts across ontologies that describe the same domain from complementary perspectives (mappings proposed by an LLM, validated by a domain expert), and then performs late-interaction reranking directly between the resulting concept embeddings on a biomedical literature testbed. Because late interaction keeps individual concept matches intact, the evidence that drives a ranking is the same evidence that explains it.</p>
+<p>My role covers the ontology-grounded concept representations, the late-interaction reranker, and the concept-level explanations, including the technical evaluation of whether those explanations are faithful to the matches that actually moved the ranking.</p>
+</section>
 <section id="genki4media" class="level2">
 <h2 class="anchored" data-anchor-id="genki4media">GenKI4Media</h2>
 <p><strong>Generative AI assistants for the media, cultural and creative sectors</strong> (BMFTR, 2025–present)</p>
