@@ -208,6 +208,23 @@ main.content > p:first-child { margin-top: 2.5rem; }
 .card p:last-child { margin-bottom: 0; }
 .card p:last-child a { font-size: 0.88rem; font-weight: 500; }
 
+/* ---------- project entries ---------- */
+.projects-page main.content section.level2 {
+  border: 1px solid $rule;
+  border-radius: 3px;
+  background: $surface;
+  padding: 1.4rem 1.6rem 1.5rem;
+  margin-top: 1.1rem;
+}
+.projects-page main.content section.level2 > h2 {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0.85rem;
+}
+.projects-page main.content section.level2 > h3 { margin-top: 1.35rem; }
+.projects-page main.content p,
+.projects-page main.content li { max-width: 64ch; }
+
 /* ---------- publications ---------- */
 ol.pubs { list-style: none; padding: 0; margin: 2rem 0 0; counter-reset: pub; max-width: none; width: 100%; }
 ol.pubs > li {

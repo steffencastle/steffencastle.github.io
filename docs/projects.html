@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0b3c63014eaf6f10b37640808f3f4a26.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-e65f55d8dfcfc309837802d5dff1e79a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed projects-page quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -169,18 +169,18 @@ ul.task-list li input[type="checkbox"] {
 <section id="delta" class="level2">
 <h2 class="anchored" data-anchor-id="delta">Character-length control with diffusion language models</h2>
 <p><strong>Training-Free Character-Length Control in Summarization with Diffusion Language Models</strong>, EMNLP 2026 (main conference)</p>
-<p>This work grew out of <a href="#genki4media">GenKI4Media</a>, where editorial partners such as dpa and Deutsche Welle need generated text to fit predefined display slots. Summarization with a fixed character length matters for headlines, article previews, notifications, subtitles, and UI text, where even a few extra characters cause truncation or layout overflow. Autoregressive models struggle with precise character-length control: training-based methods need task-specific fine-tuning, and zero-shot prompting only achieves approximate compliance.</p>
+<p>Developed within <a href="#genki4media">GenKI4Media</a>, where editorial partners such as dpa and Deutsche Welle need generated text to fit predefined display slots. Fixed character length matters for headlines, previews, notifications, subtitles, and UI text, where a few extra characters cause truncation or overflow. Autoregressive models control it poorly: training-based methods need task-specific fine-tuning, and zero-shot prompting only approximates compliance.</p>
 <p><strong>DELTA</strong> (Diffusion Expected Length Targeting Algorithm) is a training-free, inference-time method for masked diffusion LMs. At each denoising step it estimates the expected character length of the output and dynamically inserts or removes masked positions to steer toward the target length. It requires no fine-tuning and works with off-the-shelf masked diffusion LMs (e.g.&nbsp;LLaDA, Dream).</p>
 <p>Across three summarization benchmarks, DELTA reduces character-length errors by an order of magnitude compared to baselines while maintaining competitive summary quality in both automatic and human evaluation.</p>
 <p><a href="assets/papers/castle2026delta.pdf">PDF</a></p>
 </section>
 <section id="hallucination-detection" class="level2">
 <h2 class="anchored" data-anchor-id="hallucination-detection">Hallucination detection from model internals</h2>
-<p>Ongoing work within <a href="#genki4media">GenKI4Media</a> on detecting contextual hallucinations in retrieval-augmented generation from the model’s internal computation. When a language model answers from a retrieved document, its attention heads mix evidence from the context with evidence from the model’s own self-generated tokens. Separating these contributions inside the residual stream yields signals of whether a generated answer is actually supported by the source, both as a training-free groundedness readout and as a supervised hallucination detector.</p>
+<p>Detecting contextual hallucinations in retrieval-augmented generation from the model’s internal computation, within <a href="#genki4media">GenKI4Media</a>. When a model answers from a retrieved document, its attention heads mix evidence from the context with evidence from its own generated tokens. Separating these contributions inside the residual stream yields signals of whether an answer is supported by the source, both as a training-free groundedness readout and as a supervised detector.</p>
 <p>An extended abstract of this work appears at BlackboxNLP 2026 (co-located with EMNLP 2026); a full paper is forthcoming.</p>
 <section id="why-it-matters" class="level3">
 <h3 class="anchored" data-anchor-id="why-it-matters">Why it matters</h3>
-<p>For scientific and high-stakes RAG systems, the practical question is often not only whether an answer sounds true, but whether each claim is grounded in the documents provided to the model.</p>
+<p>For scientific and high-stakes RAG systems, the practical question is not only whether an answer sounds true, but whether each claim is grounded in the documents provided to the model.</p>
 </section>
 <section id="poster" class="level3">
 <h3 class="anchored" data-anchor-id="poster">Poster</h3>
@@ -190,9 +190,9 @@ ul.task-list li input[type="checkbox"] {
 <section id="guardrail" class="level2">
 <h2 class="anchored" data-anchor-id="guardrail">GUARDRAIL</h2>
 <p><strong>Grounded Uncertainty-Aware Reasoning with Deferrable, Reliable Abstention In LLMs</strong></p>
-<p>A Franco-German project proposal developed at the AI For Science 2026 Summer School (AI Grid · DataIA · SCAI), which I coordinate. Partners: DFKI Berlin, University of Bamberg (Cognitive Systems), Lamarr Institute / University of Bonn, Université Paris-Saclay, and INRAE MaIAGE.</p>
+<p>A Franco-German project proposal developed at the AI For Science 2026 Summer School (AI Grid · DataIA · SCAI), coordinated from DFKI Berlin. Partners: DFKI Berlin, University of Bamberg (Cognitive Systems), Lamarr Institute / University of Bonn, Université Paris-Saclay, and INRAE MaIAGE.</p>
 <p>Knowledge graphs enable symbolic fact-checking of LLMs, but current approaches assume the graph itself is reliable. When LLMs are used to build the graph, converting probabilistic outputs into discrete triples strips away the signal of how well each fact is supported by its source, so a KG can end up validating hallucinated claims instead of preventing them.</p>
-<p>GUARDRAIL studies the end-to-end propagation of reliability signals in KG-grounded LLM reasoning for environmental data:</p>
+<p>Tracking source reliability end to end in KG-grounded LLM reasoning for environmental data:</p>
 <ol type="1">
 <li><strong>Uncertainty-aware KG construction</strong>: retain source-groundedness (from interpretability-based source attribution) and citation-network quality signals alongside each extracted triple.</li>
 <li><strong>Reliability-aware retrieval and claim verification</strong>: adapt graph-based retrieval and KG-grounded verification to use these signals, evaluated on climate-related claim verification (ClimateCheck).</li>
@@ -203,14 +203,14 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="nexus">NEXUS</h2>
 <p><strong>Knowledge-Driven and Interpretable Reranking for Scientific Document Retrieval</strong> (Neuro-symbolic EXplainable Scientific Search)</p>
 <p>A second Franco-German project proposal from the AI For Science 2026 Summer School (AI Grid · DataIA · SCAI), developed alongside <a href="#guardrail">GUARDRAIL</a>. Partners: DFKI Berlin, TIB Hannover (Leibniz Information Center for Science and Technology), Friedrich Schiller University Jena, and Université de Technologie de Compiègne (BMBI Laboratory).</p>
-<p>Dense retrieval compresses documents into opaque vectors. It matches well, but it offers no account of which scientific concepts or relations made a query and a document similar, which limits both interpretability and the use of domain knowledge that is already written down. NEXUS asks whether structured knowledge held in existing ontologies can serve as the matching space itself rather than as auxiliary metadata or a post-hoc explanation layer.</p>
+<p>Dense retrieval compresses documents into opaque vectors. It matches well, but gives no account of which scientific concepts or relations made a query and a document similar, limiting interpretability and the use of domain knowledge that is already written down. NEXUS asks whether structured knowledge held in existing ontologies can serve as the matching space itself, rather than as auxiliary metadata or a post-hoc explanation layer.</p>
 <p>The pipeline links documents and queries to ontology concepts, aligns concepts across ontologies that describe the same domain from complementary perspectives (mappings proposed by an LLM, validated by a domain expert), and then performs late-interaction reranking directly between the resulting concept embeddings on a biomedical literature testbed. Because late interaction keeps individual concept matches intact, the evidence that drives a ranking is the same evidence that explains it.</p>
-<p>My role covers the ontology-grounded concept representations, the late-interaction reranker, and the concept-level explanations, including the technical evaluation of whether those explanations are faithful to the matches that actually moved the ranking.</p>
+<p>The DFKI contribution covers the ontology-grounded concept representations, the late-interaction reranker, and the concept-level explanations, including the technical evaluation of whether those explanations are faithful to the matches that moved the ranking.</p>
 </section>
 <section id="genki4media" class="level2">
 <h2 class="anchored" data-anchor-id="genki4media">GenKI4Media</h2>
 <p><strong>Generative AI assistants for the media, cultural and creative sectors</strong> (BMFTR, 2025–present)</p>
-<p>A consortium project with 3pc, ART+COM, Fraunhofer FOKUS, dpa, and Deutsche Welle building generative AI assistants for editorial work. DFKI’s sub-project develops methods to improve the transparency, traceability, and trustworthiness of AI-generated content: relating generated text to external sources, validating it against them, and correcting it where necessary. My work in the project covers hallucination detection from model internals and length-controlled summarization with diffusion LMs (see above).</p>
+<p>A consortium project with 3pc, ART+COM, Fraunhofer FOKUS, dpa, and Deutsche Welle building generative AI assistants for editorial work. The DFKI sub-project improves the transparency, traceability, and trustworthiness of AI-generated content by relating generated text to external sources, validating it against them, and correcting it where necessary. Contributions cover detecting unsupported claims in language model outputs and precise length control in generated text (see above).</p>
 </section>
 <section id="xpo" class="level2">
 <h2 class="anchored" data-anchor-id="xpo">XPO (Software Campus)</h2>
@@ -220,17 +220,17 @@ ul.task-list li input[type="checkbox"] {
 <section id="data4transparency" class="level2">
 <h2 class="anchored" data-anchor-id="data4transparency">Data4Transparency</h2>
 <p><strong>Information extraction for investigative journalism</strong> (2023–2024, with OCCRP)</p>
-<p>Investigative journalists working with the Organized Crime and Corruption Reporting Project analyse large document collections with little labelled data. This project developed enhanced search over such collections using few-shot joint named-entity recognition and relation extraction, so that entities and their connections can be surfaced at scale.</p>
+<p>Investigative journalists working with the Organized Crime and Corruption Reporting Project analyse large document collections with little labelled data. Enhanced search over such collections using few-shot joint named-entity recognition and relation extraction, surfacing entities and their connections at scale.</p>
 </section>
 <section id="green-ai-hub" class="level2">
 <h2 class="anchored" data-anchor-id="green-ai-hub">Green-AI Hub: entity linking for product carbon footprint estimation</h2>
 <p><strong>Green-AI Hub Mittelstand</strong> (BMUV, 2024)</p>
-<p>A pilot project with a manufacturing SME applying LLM-based semantic similarity and entity linking to map manufactured components to environmental impact databases, automating the computation of product carbon footprints. Published as <em>Entity Linking using LLMs for Automated Product Carbon Footprint Estimation</em> (2025). <a href="assets/papers/castle2025ecolink.pdf">PDF</a></p>
+<p>A pilot project with a manufacturing SME, applying LLM-based semantic similarity and entity linking to map manufactured components to environmental impact databases and automate the computation of product carbon footprints. Published as <em>Entity Linking using LLMs for Automated Product Carbon Footprint Estimation</em> (2025). <a href="assets/papers/castle2025ecolink.pdf">PDF</a></p>
 </section>
 <section id="plass" class="level2">
 <h2 class="anchored" data-anchor-id="plass">PLASS: explanation-based drift detection</h2>
 <p><strong>Platform for Analytical Supply Chain Management Services</strong> (BMWi, 2020–2022, led by Siemens)</p>
-<p>PLASS built a B2B platform for AI-based supply-chain risk monitoring, extracting decision-relevant information from multilingual news. My work covered relation extraction and, in particular, how explanation signals can identify covariate drift in deployed models, using interpretability methods as practical model-monitoring tools rather than only as human-facing explanations (<em>Detecting Covariate Drift with Explanations</em>, NLPCC XAI workshop 2021). <a href="https://www.dfki.de/fileadmin/user_upload/import/11753_Detecting_Covariate_Drift_with_Explanations.pdf">PDF</a> · <a href="https://github.com/DFKI-NLP/xai-shift-detection">Code</a></p>
+<p>PLASS built a B2B platform for AI-based supply-chain risk monitoring, extracting decision-relevant information from multilingual news. Contributions covered relation extraction and, in particular, identifying covariate drift in deployed models from explanation signals, using interpretability methods as practical model-monitoring tools rather than only as human-facing explanations (<em>Detecting Covariate Drift with Explanations</em>, NLPCC XAI workshop 2021). <a href="https://www.dfki.de/fileadmin/user_upload/import/11753_Detecting_Covariate_Drift_with_Explanations.pdf">PDF</a> · <a href="https://github.com/DFKI-NLP/xai-shift-detection">Code</a></p>
 
 
 </section>
