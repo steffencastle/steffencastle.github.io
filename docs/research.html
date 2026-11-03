@@ -166,43 +166,35 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Research centered on <strong>explainable AI</strong>, <strong>mechanistic interpretability</strong>, <strong>uncertainty quantification</strong>, and <strong>language-model reliability</strong>.</p>
-<section id="research-agenda" class="level2">
-<h2 class="anchored" data-anchor-id="research-agenda">Research agenda</h2>
-<p>Treating explanations as operational signals: not only post-hoc descriptions for humans, but measurable quantities that can improve AI systems.</p>
-<p>Current directions are contextual hallucination detection in retrieval-augmented generation, model-internal features for evaluation and reliability, controllable generation with masked diffusion language models, explanation-based covariate drift detection, interpretable NLP for information extraction and document understanding, and reliable AI workflows for science and industry.</p>
-</section>
+<p>Research on explainable AI and language models, with a focus on using model explanations to improve reliability.</p>
 <section id="phd-thesis" class="level2">
 <h2 class="anchored" data-anchor-id="phd-thesis">PhD thesis</h2>
 <p><strong>Beyond Human Interaction: Alternative Applications for Explanations</strong> (TU Berlin / DFKI, since 2023)</p>
-<p>Traditional XAI produces explanations for humans to read. The thesis instead treats attribution methods (Integrated Gradients, ALTI, LRP, and mechanistic decompositions of the residual stream) as internal signals that an AI system can consume itself. It is organised around three questions.</p>
-<p><strong>Can explanations detect when the input distribution changes?</strong> Attribution patterns shift before performance drops, enabling label-free drift detection.</p>
-<p><strong>Can explanations improve retrieval in RAG systems?</strong> Token-level attribution for pairwise embedding similarity, and attribution-based reranking of retrieved documents.</p>
-<p><strong>Can explanations verify factuality?</strong> Tracking which source tokens influence each generated token to detect contextual hallucinations and attach citations.</p>
+<p>Exploring how model explanations can be useful beyond helping people interpret predictions. Current work uses methods such as Integrated Gradients, ALTI, LRP, and residual-stream analysis to detect distribution shifts, improve document retrieval, and identify hallucinations.</p>
 </section>
-<section id="explainability-as-an-engineering-signal" class="level2">
-<h2 class="anchored" data-anchor-id="explainability-as-an-engineering-signal">Explainability as an engineering signal</h2>
-<p>A recurring theme across these projects is that explanations can be used to <strong>improve</strong> AI systems, not only to explain them after the fact, covering model monitoring, drift detection, evaluation, and mechanistic diagnostics.</p>
+<section id="current-research" class="level2">
+<h2 class="anchored" data-anchor-id="current-research">Current research</h2>
+<p><strong>Hallucination detection:</strong> Checking whether generated answers are supported by retrieved sources.</p>
+<p><strong>Document retrieval:</strong> Using attribution methods to explain embedding similarity and improve ranking.</p>
+<p><strong>Distribution shift detection:</strong> Detecting changes in input data through model explanations, without labelled examples.</p>
+<p><strong>Controlled generation:</strong> Controlling text length in diffusion language models.</p>
 </section>
 <section id="software-campus" class="level2">
 <h2 class="anchored" data-anchor-id="software-campus">Software Campus</h2>
-<p><strong>Software Campus Fellow / Project Lead, XPO</strong><br>
-Industry partner: <strong>Celonis</strong></p>
-<p>XPO is a 12-month project on explainability-guided prompt optimization and repair for reliable agentic workflows, with an emphasis on language-model reliability, grounding, and mechanistic diagnostics.</p>
+<p><strong>XPO, Software Campus Fellow and Project Lead</strong></p>
+<p>A 12-month project with Celonis on using explainability methods to identify and fix unreliable prompts in LLM-based workflows.</p>
 </section>
 <section id="dfki-projects" class="level2">
 <h2 class="anchored" data-anchor-id="dfki-projects">DFKI projects</h2>
-<ul>
-<li><strong>GenKI4Media</strong> (2025–present): transparency, traceability, and accuracy of AI-generated editorial content.</li>
-<li><strong>Data4Transparency</strong> (2023–2024): information extraction over large document collections for investigative journalists (OCCRP).</li>
-<li><strong>Green-AI Hub Mittelstand</strong> (2024): LLM entity linking for automated product carbon footprint estimation.</li>
-<li><strong>PLASS</strong> (2020–2022): information extraction and drift detection for supply-chain risk monitoring.</li>
-</ul>
+<p><strong>GenKI4Media (2025 to present):</strong> Reliable generative AI for editorial work.</p>
+<p><strong>Data4Transparency (2023 to 2024):</strong> Information extraction for investigative journalism with OCCRP.</p>
+<p><strong>Green-AI Hub Mittelstand (2024):</strong> LLM-based matching for product carbon footprint estimation.</p>
+<p><strong>PLASS (2020 to 2022):</strong> Supply-chain risk extraction and drift detection.</p>
 <p>See <a href="./projects.html">Projects</a> for details.</p>
 </section>
-<section id="collaboration-interests" class="level2">
-<h2 class="anchored" data-anchor-id="collaboration-interests">Collaboration interests</h2>
-<p>Of particular interest are source-grounded AI-for-science settings where model outputs should be constrained by the evidence provided: mathematical and scientific reasoning, engineering and technical documentation, policy, legal, and financial reports, and enterprise process and operational documents.</p>
+<section id="collaboration" class="level2">
+<h2 class="anchored" data-anchor-id="collaboration">Collaboration</h2>
+<p>Open to collaborations on explainability, reliable language models, and evidence-based AI applications in science and industry.</p>
 
 
 </section>

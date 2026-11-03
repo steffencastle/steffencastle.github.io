@@ -11,84 +11,77 @@
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "Research centered on explainable AI, mechanistic interpretability, uncertainty quantification, and language-model reliability."
-  },
-  {
-    "objectID": "research.html#research-agenda",
-    "href": "research.html#research-agenda",
-    "title": "Research",
-    "section": "Research agenda",
-    "text": "Research agenda\nTreating explanations as operational signals: not only post-hoc descriptions for humans, but measurable quantities that can improve AI systems.\nCurrent directions are contextual hallucination detection in retrieval-augmented generation, model-internal features for evaluation and reliability, controllable generation with masked diffusion language models, explanation-based covariate drift detection, interpretable NLP for information extraction and document understanding, and reliable AI workflows for science and industry."
+    "text": "Research on explainable AI and language models, with a focus on using model explanations to improve reliability."
   },
   {
     "objectID": "research.html#phd-thesis",
     "href": "research.html#phd-thesis",
     "title": "Research",
     "section": "PhD thesis",
-    "text": "PhD thesis\nBeyond Human Interaction: Alternative Applications for Explanations (TU Berlin / DFKI, since 2023)\nTraditional XAI produces explanations for humans to read. The thesis instead treats attribution methods (Integrated Gradients, ALTI, LRP, and mechanistic decompositions of the residual stream) as internal signals that an AI system can consume itself. It is organised around three questions.\nCan explanations detect when the input distribution changes? Attribution patterns shift before performance drops, enabling label-free drift detection.\nCan explanations improve retrieval in RAG systems? Token-level attribution for pairwise embedding similarity, and attribution-based reranking of retrieved documents.\nCan explanations verify factuality? Tracking which source tokens influence each generated token to detect contextual hallucinations and attach citations."
+    "text": "PhD thesis\nBeyond Human Interaction: Alternative Applications for Explanations (TU Berlin / DFKI, since 2023)\nExploring how model explanations can be useful beyond helping people interpret predictions. Current work uses methods such as Integrated Gradients, ALTI, LRP, and residual-stream analysis to detect distribution shifts, improve document retrieval, and identify hallucinations."
   },
   {
-    "objectID": "research.html#explainability-as-an-engineering-signal",
-    "href": "research.html#explainability-as-an-engineering-signal",
+    "objectID": "research.html#current-research",
+    "href": "research.html#current-research",
     "title": "Research",
-    "section": "Explainability as an engineering signal",
-    "text": "Explainability as an engineering signal\nA recurring theme across these projects is that explanations can be used to improve AI systems, not only to explain them after the fact, covering model monitoring, drift detection, evaluation, and mechanistic diagnostics."
+    "section": "Current research",
+    "text": "Current research\nHallucination detection: Checking whether generated answers are supported by retrieved sources.\nDocument retrieval: Using attribution methods to explain embedding similarity and improve ranking.\nDistribution shift detection: Detecting changes in input data through model explanations, without labelled examples.\nControlled generation: Controlling text length in diffusion language models."
   },
   {
     "objectID": "research.html#software-campus",
     "href": "research.html#software-campus",
     "title": "Research",
     "section": "Software Campus",
-    "text": "Software Campus\nSoftware Campus Fellow / Project Lead, XPO\nIndustry partner: Celonis\nXPO is a 12-month project on explainability-guided prompt optimization and repair for reliable agentic workflows, with an emphasis on language-model reliability, grounding, and mechanistic diagnostics."
+    "text": "Software Campus\nXPO, Software Campus Fellow and Project Lead\nA 12-month project with Celonis on using explainability methods to identify and fix unreliable prompts in LLM-based workflows."
   },
   {
     "objectID": "research.html#dfki-projects",
     "href": "research.html#dfki-projects",
     "title": "Research",
     "section": "DFKI projects",
-    "text": "DFKI projects\n\nGenKI4Media (2025–present): transparency, traceability, and accuracy of AI-generated editorial content.\nData4Transparency (2023–2024): information extraction over large document collections for investigative journalists (OCCRP).\nGreen-AI Hub Mittelstand (2024): LLM entity linking for automated product carbon footprint estimation.\nPLASS (2020–2022): information extraction and drift detection for supply-chain risk monitoring.\n\nSee Projects for details."
+    "text": "DFKI projects\nGenKI4Media (2025 to present): Reliable generative AI for editorial work.\nData4Transparency (2023 to 2024): Information extraction for investigative journalism with OCCRP.\nGreen-AI Hub Mittelstand (2024): LLM-based matching for product carbon footprint estimation.\nPLASS (2020 to 2022): Supply-chain risk extraction and drift detection.\nSee Projects for details."
   },
   {
-    "objectID": "research.html#collaboration-interests",
-    "href": "research.html#collaboration-interests",
+    "objectID": "research.html#collaboration",
+    "href": "research.html#collaboration",
     "title": "Research",
-    "section": "Collaboration interests",
-    "text": "Collaboration interests\nOf particular interest are source-grounded AI-for-science settings where model outputs should be constrained by the evidence provided: mathematical and scientific reasoning, engineering and technical documentation, policy, legal, and financial reports, and enterprise process and operational documents."
+    "section": "Collaboration",
+    "text": "Collaboration\nOpen to collaborations on explainability, reliable language models, and evidence-based AI applications in science and industry."
   },
   {
     "objectID": "cv.html",
     "href": "cv.html",
     "title": "CV",
     "section": "",
-    "text": "Researcher and PhD Student\nDFKI – German Research Center for Artificial Intelligence, Berlin\nPhD supervised by Prof. Dr.-Ing. Sebastian Möller, TU Berlin / DFKI"
+    "text": "Researcher and PhD Student\nDFKI, German Research Center for Artificial Intelligence, Berlin\nPhD supervisor: Prof. Dr.-Ing. Sebastian Möller, TU Berlin / DFKI"
   },
   {
     "objectID": "cv.html#current-position",
     "href": "cv.html#current-position",
     "title": "CV",
     "section": "",
-    "text": "Researcher and PhD Student\nDFKI – German Research Center for Artificial Intelligence, Berlin\nPhD supervised by Prof. Dr.-Ing. Sebastian Möller, TU Berlin / DFKI"
+    "text": "Researcher and PhD Student\nDFKI, German Research Center for Artificial Intelligence, Berlin\nPhD supervisor: Prof. Dr.-Ing. Sebastian Möller, TU Berlin / DFKI"
   },
   {
     "objectID": "cv.html#research-interests",
     "href": "cv.html#research-interests",
     "title": "CV",
     "section": "Research interests",
-    "text": "Research interests\nLanguage modeling, interpretable AI, uncertainty quantification, information extraction, mechanistic interpretability, and reliable retrieval-augmented generation."
+    "text": "Research interests\nExplainable AI, language models, mechanistic interpretability, uncertainty quantification, information extraction, and reliable retrieval-augmented generation."
   },
   {
     "objectID": "cv.html#education",
     "href": "cv.html#education",
     "title": "CV",
     "section": "Education",
-    "text": "Education\nM.Sc. Cognitive Systems\nUniversity of Potsdam, Germany\nB.Sc. Computer Science\nCase Western Reserve University, USA\nExchange year\nUniversity of Sheffield, UK"
+    "text": "Education\nM.Sc. Cognitive Systems, University of Potsdam, Germany\nB.Sc. Computer Science, Case Western Reserve University, USA\nExchange year, University of Sheffield, UK"
   },
   {
     "objectID": "cv.html#selected-experience",
     "href": "cv.html#selected-experience",
     "title": "CV",
     "section": "Selected experience",
-    "text": "Selected experience\n\nDFKI, Researcher / PhD Student (2020–present)\nProjects: XPO (Software Campus, Celonis), GenKI4Media, Green-AI Hub Mittelstand, Data4Transparency, PLASS\nDFKI, Master Thesis Research Student\nSAP Machine Learning Research Group, Research Student\nHasso-Plattner-Institut, Student Research Assistant\nMathWorks, Associate Software Developer\nEveryKey, Lead Windows Developer"
+    "text": "Selected experience\nDFKI, Researcher and PhD Student (2020 to present). Projects: XPO (Software Campus, Celonis), GenKI4Media, Green-AI Hub Mittelstand, Data4Transparency, PLASS.\nDFKI, Master Thesis Research Student\nSAP Machine Learning Research Group, Research Student\nHasso-Plattner-Institut, Student Research Assistant\nMathWorks, Associate Software Developer\nEveryKey, Lead Windows Developer"
   },
   {
     "objectID": "cv.html#skills",
@@ -102,97 +95,97 @@
     "href": "contact.html",
     "title": "Contact",
     "section": "",
-    "text": "Email: steffen.castle@dfki.de\nGitHub: github.com/steffencastle\nLinkedIn: Steffen Castle\nGoogle Scholar: Profile\nOpen to collaborations on grounded language models, mechanistic interpretability, explainability, and AI-for-science workflows."
+    "text": "Email: steffen.castle@dfki.de\nGitHub: github.com/steffencastle\nLinkedIn: Steffen Castle\nGoogle Scholar: Profile\nOpen to research discussions and collaborations on explainable AI, language models, and AI for science."
   },
   {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Training-Free Character-Length Control in Summarization with Diffusion Language Models, EMNLP 2026 (main conference)\nDeveloped within GenKI4Media, where editorial partners such as dpa and Deutsche Welle need generated text to fit predefined display slots. Fixed character length matters for headlines, previews, notifications, subtitles, and UI text, where a few extra characters cause truncation or overflow. Autoregressive models control it poorly: training-based methods need task-specific fine-tuning, and zero-shot prompting only approximates compliance.\nDELTA (Diffusion Expected Length Targeting Algorithm) is a training-free, inference-time method for masked diffusion LMs. At each denoising step it estimates the expected character length of the output and dynamically inserts or removes masked positions to steer toward the target length. It requires no fine-tuning and works with off-the-shelf masked diffusion LMs (e.g. LLaDA, Dream).\nAcross three summarization benchmarks, DELTA reduces character-length errors by an order of magnitude compared to baselines while maintaining competitive summary quality in both automatic and human evaluation.\nPDF"
+    "text": "Training-Free Character-Length Control in Summarization with Diffusion Language Models, EMNLP 2026 (main conference)\nDELTA controls the character length of summaries generated by masked diffusion language models without fine-tuning. It adjusts masked positions during generation and reduces length errors by roughly an order of magnitude across three benchmarks, while maintaining summary quality. Developed within GenKI4Media for applications such as headlines and previews.\nPDF"
   },
   {
     "objectID": "projects.html#delta",
     "href": "projects.html#delta",
     "title": "Projects",
     "section": "",
-    "text": "Training-Free Character-Length Control in Summarization with Diffusion Language Models, EMNLP 2026 (main conference)\nDeveloped within GenKI4Media, where editorial partners such as dpa and Deutsche Welle need generated text to fit predefined display slots. Fixed character length matters for headlines, previews, notifications, subtitles, and UI text, where a few extra characters cause truncation or overflow. Autoregressive models control it poorly: training-based methods need task-specific fine-tuning, and zero-shot prompting only approximates compliance.\nDELTA (Diffusion Expected Length Targeting Algorithm) is a training-free, inference-time method for masked diffusion LMs. At each denoising step it estimates the expected character length of the output and dynamically inserts or removes masked positions to steer toward the target length. It requires no fine-tuning and works with off-the-shelf masked diffusion LMs (e.g. LLaDA, Dream).\nAcross three summarization benchmarks, DELTA reduces character-length errors by an order of magnitude compared to baselines while maintaining competitive summary quality in both automatic and human evaluation.\nPDF"
+    "text": "Training-Free Character-Length Control in Summarization with Diffusion Language Models, EMNLP 2026 (main conference)\nDELTA controls the character length of summaries generated by masked diffusion language models without fine-tuning. It adjusts masked positions during generation and reduces length errors by roughly an order of magnitude across three benchmarks, while maintaining summary quality. Developed within GenKI4Media for applications such as headlines and previews.\nPDF"
   },
   {
     "objectID": "projects.html#hallucination-detection",
     "href": "projects.html#hallucination-detection",
     "title": "Projects",
     "section": "Hallucination detection from model internals",
-    "text": "Hallucination detection from model internals\nDetecting contextual hallucinations in retrieval-augmented generation from the model’s internal computation, within GenKI4Media. When a model answers from a retrieved document, its attention heads mix evidence from the context with evidence from its own generated tokens. Separating these contributions inside the residual stream yields signals of whether an answer is supported by the source, both as a training-free groundedness readout and as a supervised detector.\nAn extended abstract of this work appears at BlackboxNLP 2026 (co-located with EMNLP 2026); a full paper is forthcoming.\n\nWhy it matters\nFor scientific and high-stakes RAG systems, the practical question is not only whether an answer sounds true, but whether each claim is grounded in the documents provided to the model.\n\n\nPoster\nThis project was adapted into a collaboration-oriented poster for the AI Grid Summer School “AI for Science”, Paris 2026."
+    "text": "Hallucination detection from model internals\nResearch within GenKI4Media on detecting whether generated answers are supported by retrieved documents. The approach examines contributions from source text and previously generated tokens in the residual stream, using these signals for training-free and supervised detection.\nAn extended abstract appeared at BlackboxNLP 2026. A full paper is forthcoming. A related poster was presented at the AI Grid Summer School in Paris."
   },
   {
     "objectID": "projects.html#guardrail",
     "href": "projects.html#guardrail",
     "title": "Projects",
     "section": "GUARDRAIL",
-    "text": "GUARDRAIL\nGrounded Uncertainty-Aware Reasoning with Deferrable, Reliable Abstention In LLMs\nA Franco-German project proposal developed at the AI For Science 2026 Summer School (AI Grid · DataIA · SCAI), coordinated from DFKI Berlin. Partners: DFKI Berlin, University of Bamberg (Cognitive Systems), Lamarr Institute / University of Bonn, Université Paris-Saclay, and INRAE MaIAGE.\nKnowledge graphs enable symbolic fact-checking of LLMs, but current approaches assume the graph itself is reliable. When LLMs are used to build the graph, converting probabilistic outputs into discrete triples strips away the signal of how well each fact is supported by its source, so a KG can end up validating hallucinated claims instead of preventing them.\nTracking source reliability end to end in KG-grounded LLM reasoning for environmental data:\n\nUncertainty-aware KG construction: retain source-groundedness (from interpretability-based source attribution) and citation-network quality signals alongside each extracted triple.\nReliability-aware retrieval and claim verification: adapt graph-based retrieval and KG-grounded verification to use these signals, evaluated on climate-related claim verification (ClimateCheck).\nCalibrated abstention: combine graph reliability, retrieval coverage, and model confidence into an answer-or-defer policy, with a secondary transfer to plant- and pest-related QA."
+    "text": "GUARDRAIL\nGrounded Uncertainty-Aware Reasoning with Deferrable, Reliable Abstention In LLMs\nA Franco-German AI for Science 2026 proposal on making LLM-generated knowledge graphs more reliable. Source evidence and uncertainty are retained with extracted facts and used for retrieval, climate-related claim verification (ClimateCheck), and deciding when the system should abstain. The work also considers plant- and pest-related question answering.\nPartners: DFKI Berlin, University of Bamberg (Cognitive Systems), Lamarr Institute / University of Bonn, Université Paris-Saclay, and INRAE MaIAGE. Developed at the AI for Science Summer School (AI Grid, DataIA, SCAI), coordinated from DFKI Berlin."
   },
   {
     "objectID": "projects.html#nexus",
     "href": "projects.html#nexus",
     "title": "Projects",
     "section": "NEXUS",
-    "text": "NEXUS\nKnowledge-Driven and Interpretable Reranking for Scientific Document Retrieval (Neuro-symbolic EXplainable Scientific Search)\nA second Franco-German project proposal from the AI For Science 2026 Summer School (AI Grid · DataIA · SCAI), developed alongside GUARDRAIL. Partners: DFKI Berlin, TIB Hannover (Leibniz Information Center for Science and Technology), Friedrich Schiller University Jena, and Université de Technologie de Compiègne (BMBI Laboratory).\nDense retrieval compresses documents into opaque vectors. It matches well, but gives no account of which scientific concepts or relations made a query and a document similar, limiting interpretability and the use of domain knowledge that is already written down. NEXUS asks whether structured knowledge held in existing ontologies can serve as the matching space itself, rather than as auxiliary metadata or a post-hoc explanation layer.\nThe pipeline links documents and queries to ontology concepts, aligns concepts across ontologies that describe the same domain from complementary perspectives (mappings proposed by an LLM, validated by a domain expert), and then performs late-interaction reranking directly between the resulting concept embeddings on a biomedical literature testbed. Because late interaction keeps individual concept matches intact, the evidence that drives a ranking is the same evidence that explains it.\nThe DFKI contribution covers the ontology-grounded concept representations, the late-interaction reranker, and the concept-level explanations, including the technical evaluation of whether those explanations are faithful to the matches that moved the ranking."
+    "text": "NEXUS\nKnowledge-Driven and Interpretable Reranking for Scientific Document Retrieval (Neuro-symbolic EXplainable Scientific Search)\nA Franco-German AI for Science 2026 proposal on improving scientific search with domain ontologies. Documents and queries are linked to ontology concepts, aligned across ontologies with expert-checked LLM suggestions, and compared through late-interaction reranking. This also shows which concepts explain the ranking, evaluated on biomedical literature.\nPartners: DFKI Berlin, TIB Hannover, Friedrich Schiller University Jena, and Université de Technologie de Compiègne (BMBI Laboratory). Developed at the AI for Science Summer School (AI Grid, DataIA, SCAI). The DFKI contribution covers concept representations, reranking, and explanation evaluation."
   },
   {
     "objectID": "projects.html#genki4media",
     "href": "projects.html#genki4media",
     "title": "Projects",
     "section": "GenKI4Media",
-    "text": "GenKI4Media\nGenerative AI assistants for the media, cultural and creative sectors (BMFTR, 2025–present)\nA consortium project with 3pc, ART+COM, Fraunhofer FOKUS, dpa, and Deutsche Welle building generative AI assistants for editorial work. The DFKI sub-project improves the transparency, traceability, and trustworthiness of AI-generated content by relating generated text to external sources, validating it against them, and correcting it where necessary. Contributions cover detecting unsupported claims in language model outputs and precise length control in generated text (see above)."
+    "text": "GenKI4Media\nGenerative AI assistants for the media, cultural and creative sectors (BMFTR, 2025 to present)\nDeveloping more reliable AI tools for editorial work by checking generated content against external sources. The DFKI work focuses on hallucination detection and precise text-length control.\nPartners: 3pc, ART+COM, Fraunhofer FOKUS, dpa, and Deutsche Welle."
   },
   {
     "objectID": "projects.html#xpo",
     "href": "projects.html#xpo",
     "title": "Projects",
     "section": "XPO (Software Campus)",
-    "text": "XPO (Software Campus)\nExplainability-guided prompt optimization and repair (Software Campus, industry partner Celonis, 2026)\nProject lead for a 12-month research project on using explainability signals to diagnose and repair prompts in agentic LLM workflows, with the goal of making such workflows more reliable in enterprise process settings."
+    "text": "XPO (Software Campus)\nExplainability-guided prompt optimization and repair (Software Campus, 2026)\nA 12-month project led in collaboration with Celonis, using model explanations to identify and fix problems in prompts for enterprise LLM workflows."
   },
   {
     "objectID": "projects.html#data4transparency",
     "href": "projects.html#data4transparency",
     "title": "Projects",
     "section": "Data4Transparency",
-    "text": "Data4Transparency\nInformation extraction for investigative journalism (2023–2024, with OCCRP)\nInvestigative journalists working with the Organized Crime and Corruption Reporting Project analyse large document collections with little labelled data. Enhanced search over such collections using few-shot joint named-entity recognition and relation extraction, surfacing entities and their connections at scale."
+    "text": "Data4Transparency\nInformation extraction for investigative journalism (2023 to 2024, with OCCRP)\nUsing few-shot named-entity recognition and relation extraction to help investigative journalists find people, organisations, and connections in large document collections."
   },
   {
     "objectID": "projects.html#green-ai-hub",
     "href": "projects.html#green-ai-hub",
     "title": "Projects",
     "section": "Green-AI Hub: entity linking for product carbon footprint estimation",
-    "text": "Green-AI Hub: entity linking for product carbon footprint estimation\nGreen-AI Hub Mittelstand (BMUV, 2024)\nA pilot project with a manufacturing SME, applying LLM-based semantic similarity and entity linking to map manufactured components to environmental impact databases and automate the computation of product carbon footprints. Published as Entity Linking using LLMs for Automated Product Carbon Footprint Estimation (2025). PDF"
+    "text": "Green-AI Hub: entity linking for product carbon footprint estimation\nGreen-AI Hub Mittelstand (BMUV, 2024)\nUsing language models to match manufacturing components with environmental impact data and simplify carbon footprint calculations. Developed with a manufacturing SME and published as Entity Linking using LLMs for Automated Product Carbon Footprint Estimation (2025).\nPDF"
   },
   {
     "objectID": "projects.html#plass",
     "href": "projects.html#plass",
     "title": "Projects",
     "section": "PLASS: explanation-based drift detection",
-    "text": "PLASS: explanation-based drift detection\nPlatform for Analytical Supply Chain Management Services (BMWi, 2020–2022, led by Siemens)\nPLASS built a B2B platform for AI-based supply-chain risk monitoring, extracting decision-relevant information from multilingual news. Contributions covered relation extraction and, in particular, identifying covariate drift in deployed models from explanation signals, using interpretability methods as practical model-monitoring tools rather than only as human-facing explanations (Detecting Covariate Drift with Explanations, NLPCC XAI workshop 2021). PDF · Code"
+    "text": "PLASS: explanation-based drift detection\nPlatform for Analytical Supply Chain Management Services (BMWi, 2020 to 2022, led by Siemens)\nExtracting supply-chain risks from multilingual news and using model explanations to detect changes in input data. This work led to Detecting Covariate Drift with Explanations (NLPCC XAI Workshop, 2021).\nPDF · Code"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Steffen Castle",
     "section": "",
-    "text": "Researcher, DFKI Berlin · PhD Student, TU Berlin\n\n\nStudying how language models use information internally, and turning those internal signals into tools for hallucination detection in retrieval-augmented generation, drift monitoring, and controlled generation.\n\nResearch Projects Contact"
+    "text": "Researcher, DFKI Berlin · PhD Student, TU Berlin\n\n\nResearch on explainable AI and language models, especially how models use information and how to make their outputs more reliable.\n\nResearch Projects Contact"
   },
   {
-    "objectID": "index.html#research-story",
-    "href": "index.html#research-story",
+    "objectID": "index.html#research-and-projects",
+    "href": "index.html#research-and-projects",
     "title": "Steffen Castle",
-    "section": "Research story",
-    "text": "Research story\n\n\n2026\nGUARDRAIL: reliability-aware knowledge graphs\nTracking source reliability and uncertainty in knowledge graphs to support retrieval, fact-checking, and reliable abstention. Franco-German AI for Science project.\n\n\n2026\nNEXUS: ontology-grounded reranking for scientific search\nGrounding documents and queries in aligned domain ontologies, then reranking by late interaction between concepts so that a ranking and its explanation rest on the same evidence. Franco-German AI for Science project.\n\n\n2026\nXPO (Software Campus): explainability-guided prompt repair\nProject lead for a 12-month Software Campus project with Celonis on explainability-guided prompt optimization and repair for reliable agentic workflows.\n\n\n2025–present\nGenKI4Media: trustworthy generative AI for the media sector\nImproving the transparency, traceability, and accuracy of AI-generated editorial content (BMFTR, with dpa and Deutsche Welle). Two strands: detecting unsupported RAG answers from model internals (extended abstract at BlackboxNLP 2026, full paper forthcoming), and DELTA, training-free character-length control for masked diffusion LMs (EMNLP 2026).\n\n\n2024–2025\nExplaining embedding similarity for retrieval\nAdapting attribution methods (ALTI, Integrated Gradients) to pairwise embedding similarity, and using token-level attributions to rerank retrieved documents for RAG.\n\n\n2024\nGreen-AI Hub: automated product carbon footprint estimation\nLLM-based entity linking to map manufactured components to environmental impact databases for SMEs (Green-AI Hub Mittelstand, BMUV). Published at NLP4Ecology 2025.\n\n\n2023–2024\nData4Transparency: information extraction for investigative journalism\nFew-shot joint named-entity recognition and relation extraction to surface entities and relationships in large document collections, with the Organized Crime and Corruption Reporting Project (OCCRP).\n\n\n2023\nPhD: machine-internal uses of explainability\nThesis topic Beyond Human Interaction: Alternative Applications for Explanations. Rather than producing explanations for people to read, the thesis asks whether attribution signals can serve AI systems directly: detecting distribution shift, improving retrieval, and verifying factuality.\n\n\n2020–2022\nPLASS: information extraction for supply-chain risk\nRelation extraction and uncertainty quantification for monitoring supply-chain risks in multilingual news (BMWi, with Siemens). Produced Detecting Covariate Drift with Explanations (2021): explanation signals as operational tools for detecting covariate shift.\n\n\n2019–2020\nImproving neural network explanations\nMaster’s research at DFKI on Pattern-Guided Attribution and Pattern-Guided Integrated Gradients."
+    "section": "Research and projects",
+    "text": "Research and projects\n\n\n2026\nGUARDRAIL: reliable knowledge graphs\nTracking uncertainty and source evidence in knowledge graphs for more reliable fact-checking. Franco-German AI for Science proposal.\n\n\n2026\nNEXUS: scientific document retrieval\nUsing domain ontologies to improve document ranking and explain search results. Franco-German AI for Science proposal.\n\n\n2026\nXPO: prompt optimization\nLeading a 12-month Software Campus project with Celonis on improving prompts using explainability methods.\n\n\n2025 to present\nGenKI4Media: generative AI for journalism\nDetecting unsupported claims in generated text and controlling summary length with diffusion language models. BMFTR project with dpa and Deutsche Welle.\n\n\n2024 to 2025\nExplaining embedding similarity for retrieval\nUsing ALTI and Integrated Gradients to explain embedding similarity and improve document ranking.\n\n\n2024\nGreen-AI Hub: product carbon footprints\nMatching product components with environmental data using LLMs. Published at NLP4Ecology 2025.\n\n\n2023 to 2024\nData4Transparency: investigative journalism\nExtracting entities and relationships from large document collections in collaboration with OCCRP.\n\n\nSince 2023\nPhD: alternative uses for explanations\nThesis topic Beyond Human Interaction: Alternative Applications for Explanations. Studying how model explanations can help detect data shifts, improve retrieval, and check factual accuracy.\n\n\n2020 to 2022\nPLASS: supply-chain risk monitoring\nExtracting risks from multilingual news and detecting data shifts through model explanations. BMWi project with Siemens.\n\n\n2019 to 2020\nNeural network explanations\nMaster’s research at DFKI on Pattern-Guided Attribution and Pattern-Guided Integrated Gradients."
   },
   {
     "objectID": "index.html#selected-work",
     "href": "index.html#selected-work",
     "title": "Steffen Castle",
     "section": "Selected work",
-    "text": "Selected work\n\n\nEMNLP 2026\nTraining-free character-length control in summarization with masked diffusion LMs (DELTA).\nProject page →\n\n\nGUARDRAIL\nUncertainty-aware knowledge graphs and calibrated abstention for environmental claim verification. Franco-German AI for Science project.\nProject page →\n\n\nSoftware Campus\nExplainability-driven AI reliability with industry partner Celonis.\nResearch agenda →\n\n\nPublications\nWork on diffusion LMs, explainability, drift detection, and LLM-based entity linking.\nPublications →\n\n\nCollaboration\nOpen to collaborations on grounded language models, AI-for-science workflows, and mechanistic interpretability.\nGet in touch →"
+    "text": "Selected work\n\n\nEMNLP 2026\nDELTA: precise character-length control for diffusion language model summarization.\nProject page →\n\n\nGUARDRAIL\nReliable knowledge graphs for fact-checking and deciding when not to answer.\nProject page →\n\n\nSoftware Campus\nExplainability-based prompt optimization with Celonis.\nResearch agenda →\n\n\nPublications\nResearch on explainable AI, language models, and information extraction.\nPublications →\n\n\nCollaboration\nOpen to research collaborations in explainable AI and reliable language models.\nGet in touch →"
   }
 ]

@@ -4,34 +4,37 @@ title: "CV"
 
 ## Current position
 
-**Researcher and PhD Student**  
-DFKI – German Research Center for Artificial Intelligence, Berlin  
-PhD supervised by Prof. Dr.-Ing. Sebastian Möller, TU Berlin / DFKI
+**Researcher and PhD Student**
+
+DFKI, German Research Center for Artificial Intelligence, Berlin
+
+PhD supervisor: Prof. Dr.-Ing. Sebastian Möller, TU Berlin / DFKI
 
 ## Research interests
 
-Language modeling, interpretable AI, uncertainty quantification, information extraction, mechanistic interpretability, and reliable retrieval-augmented generation.
+Explainable AI, language models, mechanistic interpretability, uncertainty quantification, information extraction, and reliable retrieval-augmented generation.
 
 ## Education
 
-**M.Sc. Cognitive Systems**  
-University of Potsdam, Germany
+**M.Sc. Cognitive Systems**, University of Potsdam, Germany
 
-**B.Sc. Computer Science**  
-Case Western Reserve University, USA
+**B.Sc. Computer Science**, Case Western Reserve University, USA
 
-**Exchange year**  
-University of Sheffield, UK
+**Exchange year**, University of Sheffield, UK
 
 ## Selected experience
 
-- **DFKI**, Researcher / PhD Student (2020–present)  
-  Projects: XPO (Software Campus, Celonis), GenKI4Media, Green-AI Hub Mittelstand, Data4Transparency, PLASS
-- **DFKI**, Master Thesis Research Student
-- **SAP Machine Learning Research Group**, Research Student
-- **Hasso-Plattner-Institut**, Student Research Assistant
-- **MathWorks**, Associate Software Developer
-- **EveryKey**, Lead Windows Developer
+**DFKI**, Researcher and PhD Student (2020 to present). Projects: XPO (Software Campus, Celonis), GenKI4Media, Green-AI Hub Mittelstand, Data4Transparency, PLASS.
+
+**DFKI**, Master Thesis Research Student
+
+**SAP Machine Learning Research Group**, Research Student
+
+**Hasso-Plattner-Institut**, Student Research Assistant
+
+**MathWorks**, Associate Software Developer
+
+**EveryKey**, Lead Windows Developer
 
 ## Skills
 

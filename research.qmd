@@ -2,46 +2,42 @@
 title: "Research"
 ---
 
-Research centered on **explainable AI**, **mechanistic interpretability**, **uncertainty quantification**, and **language-model reliability**.
-
-## Research agenda
-
-Treating explanations as operational signals: not only post-hoc descriptions for humans, but measurable quantities that can improve AI systems.
-
-Current directions are contextual hallucination detection in retrieval-augmented generation, model-internal features for evaluation and reliability, controllable generation with masked diffusion language models, explanation-based covariate drift detection, interpretable NLP for information extraction and document understanding, and reliable AI workflows for science and industry.
+Research on explainable AI and language models, with a focus on using model explanations to improve reliability.
 
 ## PhD thesis
 
 **Beyond Human Interaction: Alternative Applications for Explanations** (TU Berlin / DFKI, since 2023)
 
-Traditional XAI produces explanations for humans to read. The thesis instead treats attribution methods (Integrated Gradients, ALTI, LRP, and mechanistic decompositions of the residual stream) as internal signals that an AI system can consume itself. It is organised around three questions.
+Exploring how model explanations can be useful beyond helping people interpret predictions. Current work uses methods such as Integrated Gradients, ALTI, LRP, and residual-stream analysis to detect distribution shifts, improve document retrieval, and identify hallucinations.
 
-**Can explanations detect when the input distribution changes?** Attribution patterns shift before performance drops, enabling label-free drift detection.
+## Current research
 
-**Can explanations improve retrieval in RAG systems?** Token-level attribution for pairwise embedding similarity, and attribution-based reranking of retrieved documents.
+**Hallucination detection:** Checking whether generated answers are supported by retrieved sources.
 
-**Can explanations verify factuality?** Tracking which source tokens influence each generated token to detect contextual hallucinations and attach citations.
+**Document retrieval:** Using attribution methods to explain embedding similarity and improve ranking.
 
-## Explainability as an engineering signal
+**Distribution shift detection:** Detecting changes in input data through model explanations, without labelled examples.
 
-A recurring theme across these projects is that explanations can be used to **improve** AI systems, not only to explain them after the fact, covering model monitoring, drift detection, evaluation, and mechanistic diagnostics.
+**Controlled generation:** Controlling text length in diffusion language models.
 
-## Software Campus
+## Software Campus {#software-campus}
 
-**Software Campus Fellow / Project Lead, XPO**  
-Industry partner: **Celonis**
+**XPO, Software Campus Fellow and Project Lead**
 
-XPO is a 12-month project on explainability-guided prompt optimization and repair for reliable agentic workflows, with an emphasis on language-model reliability, grounding, and mechanistic diagnostics.
+A 12-month project with Celonis on using explainability methods to identify and fix unreliable prompts in LLM-based workflows.
 
 ## DFKI projects
 
-- **GenKI4Media** (2025–present): transparency, traceability, and accuracy of AI-generated editorial content.
-- **Data4Transparency** (2023–2024): information extraction over large document collections for investigative journalists (OCCRP).
-- **Green-AI Hub Mittelstand** (2024): LLM entity linking for automated product carbon footprint estimation.
-- **PLASS** (2020–2022): information extraction and drift detection for supply-chain risk monitoring.
+**GenKI4Media (2025 to present):** Reliable generative AI for editorial work.
+
+**Data4Transparency (2023 to 2024):** Information extraction for investigative journalism with OCCRP.
+
+**Green-AI Hub Mittelstand (2024):** LLM-based matching for product carbon footprint estimation.
+
+**PLASS (2020 to 2022):** Supply-chain risk extraction and drift detection.
 
 See [Projects](projects.qmd) for details.
 
-## Collaboration interests
+## Collaboration
 
-Of particular interest are source-grounded AI-for-science settings where model outputs should be constrained by the evidence provided: mathematical and scientific reasoning, engineering and technical documentation, policy, legal, and financial reports, and enterprise process and operational documents.
+Open to collaborations on explainability, reliable language models, and evidence-based AI applications in science and industry.
